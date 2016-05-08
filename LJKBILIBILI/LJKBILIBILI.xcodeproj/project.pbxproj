@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		135673EE604A869AB6A2B182 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35504959B463B0602D128A02 /* libPods.a */; };
+		EB7742081CD8B6D6007D83E9 /* BLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742071CD8B6D6007D83E9 /* BLNavigationController.m */; };
+		EB77420B1CD8B702007D83E9 /* BLHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77420A1CD8B702007D83E9 /* BLHomeViewController.m */; };
+		EB7742101CD8B9DA007D83E9 /* BLTopNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77420F1CD8B9DA007D83E9 /* BLTopNavigationBar.m */; };
+		EB7742141CD8CAC8007D83E9 /* BLConst.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742131CD8CAC8007D83E9 /* BLConst.m */; };
+		EB7742171CD8CEE3007D83E9 /* BLTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742161CD8CEE3007D83E9 /* BLTopView.m */; };
+		EB77421C1CD8ED74007D83E9 /* BLSlidView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77421B1CD8ED74007D83E9 /* BLSlidView.m */; };
+		EB77421E1CD8ED98007D83E9 /* BLSlidView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB77421D1CD8ED98007D83E9 /* BLSlidView.xib */; };
 		EBD7C2F21CD70C7A006F2016 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7C2F11CD70C7A006F2016 /* main.m */; };
 		EBD7C2F51CD70C7A006F2016 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7C2F41CD70C7A006F2016 /* AppDelegate.m */; };
 		EBD7C2F81CD70C7A006F2016 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7C2F71CD70C7A006F2016 /* ViewController.m */; };
@@ -39,10 +46,23 @@
 		35504959B463B0602D128A02 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4936E3804F9914AEEC7F4E42 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AC28F008A4D1D594A03F4A42 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		EB7742061CD8B6D6007D83E9 /* BLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLNavigationController.h; sourceTree = "<group>"; };
+		EB7742071CD8B6D6007D83E9 /* BLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLNavigationController.m; sourceTree = "<group>"; };
+		EB7742091CD8B702007D83E9 /* BLHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLHomeViewController.h; sourceTree = "<group>"; };
+		EB77420A1CD8B702007D83E9 /* BLHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLHomeViewController.m; sourceTree = "<group>"; };
+		EB77420E1CD8B9DA007D83E9 /* BLTopNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTopNavigationBar.h; sourceTree = "<group>"; };
+		EB77420F1CD8B9DA007D83E9 /* BLTopNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTopNavigationBar.m; sourceTree = "<group>"; };
+		EB7742121CD8CAC8007D83E9 /* BLConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLConst.h; sourceTree = "<group>"; };
+		EB7742131CD8CAC8007D83E9 /* BLConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLConst.m; sourceTree = "<group>"; };
+		EB7742151CD8CEE3007D83E9 /* BLTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTopView.h; sourceTree = "<group>"; };
+		EB7742161CD8CEE3007D83E9 /* BLTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTopView.m; sourceTree = "<group>"; };
+		EB77421A1CD8ED74007D83E9 /* BLSlidView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLSlidView.h; sourceTree = "<group>"; };
+		EB77421B1CD8ED74007D83E9 /* BLSlidView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLSlidView.m; sourceTree = "<group>"; };
+		EB77421D1CD8ED98007D83E9 /* BLSlidView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLSlidView.xib; sourceTree = "<group>"; };
 		EBD7C2ED1CD70C7A006F2016 /* LJKBILIBILI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJKBILIBILI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBD7C2F11CD70C7A006F2016 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EBD7C2F31CD70C7A006F2016 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		EBD7C2F41CD70C7A006F2016 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EBD7C2F11CD70C7A006F2016 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../main.m; sourceTree = "<group>"; };
+		EBD7C2F31CD70C7A006F2016 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
+		EBD7C2F41CD70C7A006F2016 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
 		EBD7C2F61CD70C7A006F2016 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EBD7C2F71CD70C7A006F2016 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EBD7C2FA1CD70C7A006F2016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -100,6 +120,94 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EB7742021CD8B5C8007D83E9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EB7742181CD8EC54007D83E9 /* Slid */,
+				EB7742111CD8CA41007D83E9 /* Other */,
+				EB7742031CD8B618007D83E9 /* Main */,
+				EB7742041CD8B636007D83E9 /* Lib */,
+				EB77420C1CD8B96F007D83E9 /* New Group */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EB7742031CD8B618007D83E9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EB77420D1CD8B995007D83E9 /* View */,
+				EB7742051CD8B688007D83E9 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EB7742041CD8B636007D83E9 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		EB7742051CD8B688007D83E9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7C2F91CD70C7A006F2016 /* Main.storyboard */,
+				EB7742061CD8B6D6007D83E9 /* BLNavigationController.h */,
+				EB7742071CD8B6D6007D83E9 /* BLNavigationController.m */,
+				EB7742091CD8B702007D83E9 /* BLHomeViewController.h */,
+				EB77420A1CD8B702007D83E9 /* BLHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB77420C1CD8B96F007D83E9 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		EB77420D1CD8B995007D83E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB77420E1CD8B9DA007D83E9 /* BLTopNavigationBar.h */,
+				EB77420F1CD8B9DA007D83E9 /* BLTopNavigationBar.m */,
+				EB7742151CD8CEE3007D83E9 /* BLTopView.h */,
+				EB7742161CD8CEE3007D83E9 /* BLTopView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB7742111CD8CA41007D83E9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7C2F11CD70C7A006F2016 /* main.m */,
+				EBD7C2F31CD70C7A006F2016 /* AppDelegate.h */,
+				EBD7C2F41CD70C7A006F2016 /* AppDelegate.m */,
+				EB7742121CD8CAC8007D83E9 /* BLConst.h */,
+				EB7742131CD8CAC8007D83E9 /* BLConst.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		EB7742181CD8EC54007D83E9 /* Slid */ = {
+			isa = PBXGroup;
+			children = (
+				EB7742191CD8EC86007D83E9 /* Controller */,
+			);
+			path = Slid;
+			sourceTree = "<group>";
+		};
+		EB7742191CD8EC86007D83E9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB77421A1CD8ED74007D83E9 /* BLSlidView.h */,
+				EB77421B1CD8ED74007D83E9 /* BLSlidView.m */,
+				EB77421D1CD8ED98007D83E9 /* BLSlidView.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		EBD7C2E41CD70C7A006F2016 = {
 			isa = PBXGroup;
 			children = (
@@ -125,11 +233,9 @@
 		EBD7C2EF1CD70C7A006F2016 /* LJKBILIBILI */ = {
 			isa = PBXGroup;
 			children = (
-				EBD7C2F31CD70C7A006F2016 /* AppDelegate.h */,
-				EBD7C2F41CD70C7A006F2016 /* AppDelegate.m */,
+				EB7742021CD8B5C8007D83E9 /* Classes */,
 				EBD7C2F61CD70C7A006F2016 /* ViewController.h */,
 				EBD7C2F71CD70C7A006F2016 /* ViewController.m */,
-				EBD7C2F91CD70C7A006F2016 /* Main.storyboard */,
 				EBD7C2FC1CD70C7A006F2016 /* Assets.xcassets */,
 				EBD7C2FE1CD70C7A006F2016 /* LaunchScreen.storyboard */,
 				EBD7C3011CD70C7A006F2016 /* Info.plist */,
@@ -141,7 +247,6 @@
 		EBD7C2F01CD70C7A006F2016 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EBD7C2F11CD70C7A006F2016 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -229,6 +334,7 @@
 		EBD7C2E51CD70C7A006F2016 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = BL;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = LJK;
 				TargetAttributes = {
@@ -270,6 +376,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB77421E1CD8ED98007D83E9 /* BLSlidView.xib in Resources */,
 				EBD7C3001CD70C7A006F2016 /* LaunchScreen.storyboard in Resources */,
 				EBD7C2FD1CD70C7A006F2016 /* Assets.xcassets in Resources */,
 				EBD7C2FB1CD70C7A006F2016 /* Main.storyboard in Resources */,
@@ -346,7 +453,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBD7C2F81CD70C7A006F2016 /* ViewController.m in Sources */,
+				EB7742101CD8B9DA007D83E9 /* BLTopNavigationBar.m in Sources */,
+				EB7742171CD8CEE3007D83E9 /* BLTopView.m in Sources */,
+				EB77420B1CD8B702007D83E9 /* BLHomeViewController.m in Sources */,
+				EB7742081CD8B6D6007D83E9 /* BLNavigationController.m in Sources */,
 				EBD7C2F51CD70C7A006F2016 /* AppDelegate.m in Sources */,
+				EB77421C1CD8ED74007D83E9 /* BLSlidView.m in Sources */,
+				EB7742141CD8CAC8007D83E9 /* BLConst.m in Sources */,
 				EBD7C2F21CD70C7A006F2016 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +502,7 @@
 				EBD7C2FA1CD70C7A006F2016 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 		EBD7C2FE1CD70C7A006F2016 /* LaunchScreen.storyboard */ = {
