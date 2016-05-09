@@ -10,4 +10,19 @@
 
 @interface BLSlidView : UIView
 
+/**
+ *  提供一个阴影属性进行修改
+ */
+@property (weak, nonatomic) UIView *shadowView;
+
+
+/**
+ *  提供一个初始化类方法
+ */
++ (instancetype)slideView;
+
+/**
+ *  保存一段显示SlideView的block
+ */
+@property (nonatomic, copy) void (^showSlideView)();
 @end

@@ -15,8 +15,21 @@
  *  数组中保存的是按钮的名称
  */
 @property (nonatomic, strong) NSArray *titleArray;
-
+/**
+ *  点击按钮调用的block
+ */
 @property (nonatomic, copy) void (^clikBtn)(NSInteger);
+
+
+/**
+ *   底部指示条
+ */
+@property (nonatomic, weak) UIView *bottomBar;
+
+/**
+ *  提供一个外部方法来修改字体的颜色
+ */
+- (void)changeButtonColor:(NSInteger)btnTag;
 
 
 

@@ -42,15 +42,18 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDW-t0-bno">
                                                 <rect key="frame" x="0.0" y="5" width="200" height="35"/>
+                                                <connections>
+                                                    <action selector="slideBtn" destination="y08-yo-4rW" eventType="touchUpInside" id="OHX-9E-qpY"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="盘子" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBp-t8-P5o">
-                                                <rect key="frame" x="85" y="8" width="30" height="25"/>
+                                                <rect key="frame" x="80" y="8" width="30" height="25"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bili_default_avatar2" translatesAutoresizingMaskIntoConstraints="NO" id="weI-N7-Qjd">
-                                                <rect key="frame" x="32" y="0.0" width="40" height="40"/>
+                                                <rect key="frame" x="27" y="0.0" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="OHU-k5-ZA6"/>
                                                 </constraints>
@@ -68,7 +71,7 @@
                                             <constraint firstAttribute="width" constant="200" id="947-TY-xfX"/>
                                             <constraint firstItem="weI-N7-Qjd" firstAttribute="centerY" secondItem="wOE-nO-sAI" secondAttribute="centerY" id="BsS-Kj-U7j"/>
                                             <constraint firstItem="TDW-t0-bno" firstAttribute="leading" secondItem="sbs-hV-hhi" secondAttribute="leading" id="CSi-cG-jNB"/>
-                                            <constraint firstItem="weI-N7-Qjd" firstAttribute="leading" secondItem="wOE-nO-sAI" secondAttribute="trailing" constant="10" id="CXJ-Gb-627"/>
+                                            <constraint firstItem="weI-N7-Qjd" firstAttribute="leading" secondItem="wOE-nO-sAI" secondAttribute="trailing" constant="5" id="CXJ-Gb-627"/>
                                             <constraint firstAttribute="bottom" secondItem="TDW-t0-bno" secondAttribute="bottom" id="DUa-1q-RIh"/>
                                             <constraint firstItem="TDW-t0-bno" firstAttribute="top" secondItem="sbs-hV-hhi" secondAttribute="top" constant="5" id="NPA-vS-yVx"/>
                                             <constraint firstItem="weI-N7-Qjd" firstAttribute="centerY" secondItem="lBp-t8-P5o" secondAttribute="centerY" id="bcJ-9V-QJk"/>
@@ -158,7 +161,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qRe-zq-sjl" userLabel="Root Scroll View">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qRe-zq-sjl" userLabel="Main Scroll View" customClass="BLMainScrollView">
                                 <rect key="frame" x="0.0" y="114" width="600" height="486"/>
                             </scrollView>
                         </subviews>

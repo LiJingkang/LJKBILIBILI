@@ -18,4 +18,18 @@
 #define mainScreen [UIScreen mainScreen]
 
 
+// 通知
+extern NSString *const BLShowSlideNotification;  // 隐藏SlideView
 
+extern NSString *const BLScrollToTop;  // 向上滚动
+
+
+
+typedef enum : NSUInteger {
+    ControllerEnumLive = 0, // 直播
+    ControllerEnumCommend = 1, // 推荐
+    ControllerEnumNew = 2, // 新番
+    ControllerEnumSubarea = 3, // 分区
+    ControllerEnumAttention = 4, // 关注
+    ControllerEnumDiscover = 5 , // 发现
+} ControllerEnum;

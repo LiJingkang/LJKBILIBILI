@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9531"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
@@ -12,20 +12,57 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vpR-cs-5u2">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vpR-cs-5u2" userLabel="Slid Main View">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="600"/>
                     <subviews>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8qD-el-BMD">
-                            <rect key="frame" x="0.0" y="28" width="240" height="128"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bili_default_avatar2" translatesAutoresizingMaskIntoConstraints="NO" id="Os8-wA-v0T">
+                            <rect key="frame" x="20" y="50" width="64" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="64" id="3Kq-zj-8l4"/>
+                                <constraint firstAttribute="height" constant="64" id="E7c-07-mt5"/>
+                                <constraint firstAttribute="width" secondItem="Os8-wA-v0T" secondAttribute="height" multiplier="1:1" id="cCs-sU-XnI"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="3Kq-zj-8l4"/>
+                                </mask>
+                            </variation>
+                        </imageView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ioh-vb-MEk">
+                            <rect key="frame" x="0.0" y="147" width="240" height="453"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </view>
+                        </tableView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="盘子" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDU-nz-H1C">
+                            <rect key="frame" x="37" y="123" width="30" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bili_drawerbg_logined" translatesAutoresizingMaskIntoConstraints="NO" id="5kJ-qv-TTy">
+                            <rect key="frame" x="84" y="30" width="156" height="117"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="5kJ-qv-TTy" secondAttribute="height" multiplier="4:3" id="K9e-8E-dTC"/>
+                            </constraints>
+                        </imageView>
                     </subviews>
                     <color key="backgroundColor" red="0.94509803921568625" green="0.35686274509803922" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
+                        <constraint firstItem="5kJ-qv-TTy" firstAttribute="top" secondItem="vpR-cs-5u2" secondAttribute="top" constant="30" id="1nz-BK-ZzZ"/>
+                        <constraint firstItem="ioh-vb-MEk" firstAttribute="top" secondItem="5kJ-qv-TTy" secondAttribute="bottom" id="2Eu-LS-diC"/>
+                        <constraint firstItem="eDU-nz-H1C" firstAttribute="top" secondItem="Os8-wA-v0T" secondAttribute="bottom" constant="9" id="5aF-Vo-keq"/>
+                        <constraint firstItem="Os8-wA-v0T" firstAttribute="top" secondItem="vpR-cs-5u2" secondAttribute="top" constant="50" id="779-Bl-XSe"/>
+                        <constraint firstItem="eDU-nz-H1C" firstAttribute="centerX" secondItem="Os8-wA-v0T" secondAttribute="centerX" id="8WH-yY-QDb"/>
+                        <constraint firstAttribute="bottom" secondItem="ioh-vb-MEk" secondAttribute="bottom" id="LlP-SU-6i8"/>
+                        <constraint firstAttribute="trailing" secondItem="5kJ-qv-TTy" secondAttribute="trailing" id="Q3L-x3-uVZ"/>
+                        <constraint firstItem="ioh-vb-MEk" firstAttribute="leading" secondItem="vpR-cs-5u2" secondAttribute="leading" id="Wwl-bq-9lB"/>
                         <constraint firstAttribute="width" secondItem="vpR-cs-5u2" secondAttribute="height" multiplier="1:2.5" id="bj1-Ks-Ma9"/>
+                        <constraint firstItem="Os8-wA-v0T" firstAttribute="leading" secondItem="vpR-cs-5u2" secondAttribute="leading" constant="20" id="fTo-tp-s9e"/>
+                        <constraint firstAttribute="trailing" secondItem="ioh-vb-MEk" secondAttribute="trailing" id="hr4-ek-xcY"/>
+                        <constraint firstItem="5kJ-qv-TTy" firstAttribute="leading" secondItem="Os8-wA-v0T" secondAttribute="trailing" id="xTb-pu-qXT"/>
+                        <constraint firstItem="5kJ-qv-TTy" firstAttribute="leading" secondItem="Os8-wA-v0T" secondAttribute="trailing" id="xrh-bH-VN9"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mXn-d1-oFb">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mXn-d1-oFb" userLabel="dragging View">
                     <rect key="frame" x="580" y="0.0" width="20" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -33,7 +70,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="mXn-d1-oFb" secondAttribute="bottom" id="63m-3C-vJm"/>
                 <constraint firstAttribute="bottom" secondItem="vpR-cs-5u2" secondAttribute="bottom" id="BcC-MK-F8v"/>
@@ -48,6 +85,14 @@
                     <exclude reference="Mph-cT-hEC"/>
                 </mask>
             </variation>
+            <connections>
+                <outlet property="associatorTableView" destination="ioh-vb-MEk" id="BUI-CI-ymi"/>
+                <outlet property="dragView" destination="mXn-d1-oFb" id="uKd-Jh-HaT"/>
+            </connections>
         </view>
     </objects>
+    <resources>
+        <image name="bili_default_avatar2" width="192" height="192"/>
+        <image name="bili_drawerbg_logined" width="270" height="208"/>
+    </resources>
 </document>

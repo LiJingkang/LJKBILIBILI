@@ -11,8 +11,14 @@
 
 
 @interface BLTopView ()
-
+/**
+ *  当前点击的按钮
+ */
 @property (nonatomic, assign) NSInteger currentClickButton;
+
+
+
+
 
 @end
 
@@ -36,13 +42,11 @@
 {
     _titleArray = titleArray;
 
-    UIScreen *screen = [UIScreen mainScreen];
-
-    CGFloat btnW = screen.bounds.size.width / titleArray.count;
+    CGFloat btnW = mainScreen.bounds.size.width / titleArray.count;
     CGFloat btnH = 30;
     CGFloat btnY = 80;
 
-    for (NSInteger i = 0; i<self.titleArray.count; i++) {
+    for (NSInteger i = 0; i < self.titleArray.count; i++) {
         UIButton *navButton = [[UIButton alloc] init];
 
         navButton.frame = CGRectMake(btnW * i, btnY, btnW, btnH);   // 设置
@@ -66,6 +70,7 @@
     UIView* bottomBar = [[UIView alloc] initWithFrame:CGRectMake(12 + btnW, 111, btnW - 24, 3)];
     bottomBar.backgroundColor = BLColor(239, 239, 239);
     bottomBar.layer.cornerRadius = 1.5;
+    self.bottomBar = bottomBar;
     [self addSubview:bottomBar];
 }
 
@@ -86,8 +91,15 @@
     if (btnTag == self.currentClickButton) {
         return;
     }
+    [(UIButton *)[self viewWithTag:self.currentClickButton] setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
     [(UIButton *)[self viewWithTag:btnTag] setTitleColor:BLColor(239, 239, 239) forState:UIControlStateNormal];
 
     self.currentClickButton = btnTag;
 }
+
+- (IBAction)slideBtn
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:BLShowSlideNotification object:self userInfo:nil];
+}
+
 @end

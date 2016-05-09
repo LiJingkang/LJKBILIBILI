@@ -10,16 +10,19 @@
 		135673EE604A869AB6A2B182 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35504959B463B0602D128A02 /* libPods.a */; };
 		EB7742081CD8B6D6007D83E9 /* BLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742071CD8B6D6007D83E9 /* BLNavigationController.m */; };
 		EB77420B1CD8B702007D83E9 /* BLHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77420A1CD8B702007D83E9 /* BLHomeViewController.m */; };
-		EB7742101CD8B9DA007D83E9 /* BLTopNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77420F1CD8B9DA007D83E9 /* BLTopNavigationBar.m */; };
 		EB7742141CD8CAC8007D83E9 /* BLConst.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742131CD8CAC8007D83E9 /* BLConst.m */; };
 		EB7742171CD8CEE3007D83E9 /* BLTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742161CD8CEE3007D83E9 /* BLTopView.m */; };
 		EB77421C1CD8ED74007D83E9 /* BLSlidView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77421B1CD8ED74007D83E9 /* BLSlidView.m */; };
 		EB77421E1CD8ED98007D83E9 /* BLSlidView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB77421D1CD8ED98007D83E9 /* BLSlidView.xib */; };
-		EBD7C2F21CD70C7A006F2016 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7C2F11CD70C7A006F2016 /* main.m */; };
-		EBD7C2F51CD70C7A006F2016 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7C2F41CD70C7A006F2016 /* AppDelegate.m */; };
-		EBD7C2F81CD70C7A006F2016 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7C2F71CD70C7A006F2016 /* ViewController.m */; };
+		EB7742231CE03937007D83E9 /* BLMainScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742221CE03937007D83E9 /* BLMainScrollView.m */; };
+		EB77422F1CE078B5007D83E9 /* BLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77422E1CE078B5007D83E9 /* BLBaseViewController.m */; };
+		EB7742321CE084D5007D83E9 /* BLCommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742311CE084D5007D83E9 /* BLCommendViewController.m */; };
+		EB7742381CE0A268007D83E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742371CE0A268007D83E9 /* AppDelegate.m */; };
+		EB77423A1CE0A27C007D83E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742391CE0A27C007D83E9 /* main.m */; };
+		EB77423E1CE0A2A3007D83E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB77423B1CE0A2A3007D83E9 /* Assets.xcassets */; };
+		EB77423F1CE0A2A3007D83E9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB77423C1CE0A2A3007D83E9 /* Info.plist */; };
+		EB7742401CE0A2A3007D83E9 /* Setting.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB77423D1CE0A2A3007D83E9 /* Setting.plist */; };
 		EBD7C2FB1CD70C7A006F2016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7C2F91CD70C7A006F2016 /* Main.storyboard */; };
-		EBD7C2FD1CD70C7A006F2016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD7C2FC1CD70C7A006F2016 /* Assets.xcassets */; };
 		EBD7C3001CD70C7A006F2016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7C2FE1CD70C7A006F2016 /* LaunchScreen.storyboard */; };
 		EBD7C30B1CD70C7A006F2016 /* LJKBILIBILITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7C30A1CD70C7A006F2016 /* LJKBILIBILITests.m */; };
 		EBD7C3161CD70C7A006F2016 /* LJKBILIBILIUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7C3151CD70C7A006F2016 /* LJKBILIBILIUITests.m */; };
@@ -50,8 +53,6 @@
 		EB7742071CD8B6D6007D83E9 /* BLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLNavigationController.m; sourceTree = "<group>"; };
 		EB7742091CD8B702007D83E9 /* BLHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLHomeViewController.h; sourceTree = "<group>"; };
 		EB77420A1CD8B702007D83E9 /* BLHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLHomeViewController.m; sourceTree = "<group>"; };
-		EB77420E1CD8B9DA007D83E9 /* BLTopNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTopNavigationBar.h; sourceTree = "<group>"; };
-		EB77420F1CD8B9DA007D83E9 /* BLTopNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTopNavigationBar.m; sourceTree = "<group>"; };
 		EB7742121CD8CAC8007D83E9 /* BLConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLConst.h; sourceTree = "<group>"; };
 		EB7742131CD8CAC8007D83E9 /* BLConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLConst.m; sourceTree = "<group>"; };
 		EB7742151CD8CEE3007D83E9 /* BLTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTopView.h; sourceTree = "<group>"; };
@@ -59,16 +60,21 @@
 		EB77421A1CD8ED74007D83E9 /* BLSlidView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLSlidView.h; sourceTree = "<group>"; };
 		EB77421B1CD8ED74007D83E9 /* BLSlidView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLSlidView.m; sourceTree = "<group>"; };
 		EB77421D1CD8ED98007D83E9 /* BLSlidView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLSlidView.xib; sourceTree = "<group>"; };
+		EB7742211CE03937007D83E9 /* BLMainScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLMainScrollView.h; sourceTree = "<group>"; };
+		EB7742221CE03937007D83E9 /* BLMainScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLMainScrollView.m; sourceTree = "<group>"; };
+		EB77422D1CE078B5007D83E9 /* BLBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLBaseViewController.h; sourceTree = "<group>"; };
+		EB77422E1CE078B5007D83E9 /* BLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLBaseViewController.m; sourceTree = "<group>"; };
+		EB7742301CE084D5007D83E9 /* BLCommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCommendViewController.h; sourceTree = "<group>"; };
+		EB7742311CE084D5007D83E9 /* BLCommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCommendViewController.m; sourceTree = "<group>"; };
+		EB7742361CE0A268007D83E9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EB7742371CE0A268007D83E9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EB7742391CE0A27C007D83E9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB77423B1CE0A2A3007D83E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB77423C1CE0A2A3007D83E9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB77423D1CE0A2A3007D83E9 /* Setting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Setting.plist; sourceTree = "<group>"; };
 		EBD7C2ED1CD70C7A006F2016 /* LJKBILIBILI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJKBILIBILI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBD7C2F11CD70C7A006F2016 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../main.m; sourceTree = "<group>"; };
-		EBD7C2F31CD70C7A006F2016 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
-		EBD7C2F41CD70C7A006F2016 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
-		EBD7C2F61CD70C7A006F2016 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EBD7C2F71CD70C7A006F2016 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EBD7C2FA1CD70C7A006F2016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EBD7C2FC1CD70C7A006F2016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBD7C2FF1CD70C7A006F2016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EBD7C3011CD70C7A006F2016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBD7C3061CD70C7A006F2016 /* LJKBILIBILITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LJKBILIBILITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD7C30A1CD70C7A006F2016 /* LJKBILIBILITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJKBILIBILITests.m; sourceTree = "<group>"; };
 		EBD7C30C1CD70C7A006F2016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -123,6 +129,10 @@
 		EB7742021CD8B5C8007D83E9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EB7742351CE0A22D007D83E9 /* Launch */,
+				EB7742331CE0A1EE007D83E9 /* Source */,
+				EB7742281CE07837007D83E9 /* Base */,
+				EB7742241CE07585007D83E9 /* Commend(推荐) */,
 				EB7742181CD8EC54007D83E9 /* Slid */,
 				EB7742111CD8CA41007D83E9 /* Other */,
 				EB7742031CD8B618007D83E9 /* Main */,
@@ -170,10 +180,10 @@
 		EB77420D1CD8B995007D83E9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EB77420E1CD8B9DA007D83E9 /* BLTopNavigationBar.h */,
-				EB77420F1CD8B9DA007D83E9 /* BLTopNavigationBar.m */,
 				EB7742151CD8CEE3007D83E9 /* BLTopView.h */,
 				EB7742161CD8CEE3007D83E9 /* BLTopView.m */,
+				EB7742211CE03937007D83E9 /* BLMainScrollView.h */,
+				EB7742221CE03937007D83E9 /* BLMainScrollView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,9 +191,9 @@
 		EB7742111CD8CA41007D83E9 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				EBD7C2F11CD70C7A006F2016 /* main.m */,
-				EBD7C2F31CD70C7A006F2016 /* AppDelegate.h */,
-				EBD7C2F41CD70C7A006F2016 /* AppDelegate.m */,
+				EB7742391CE0A27C007D83E9 /* main.m */,
+				EB7742361CE0A268007D83E9 /* AppDelegate.h */,
+				EB7742371CE0A268007D83E9 /* AppDelegate.m */,
 				EB7742121CD8CAC8007D83E9 /* BLConst.h */,
 				EB7742131CD8CAC8007D83E9 /* BLConst.m */,
 			);
@@ -206,6 +216,91 @@
 				EB77421D1CD8ED98007D83E9 /* BLSlidView.xib */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB7742241CE07585007D83E9 /* Commend(推荐) */ = {
+			isa = PBXGroup;
+			children = (
+				EB7742271CE075C5007D83E9 /* Model */,
+				EB7742261CE075B3007D83E9 /* View */,
+				EB7742251CE075A1007D83E9 /* Controller */,
+			);
+			name = "Commend(推荐)";
+			path = Commend;
+			sourceTree = "<group>";
+		};
+		EB7742251CE075A1007D83E9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB7742301CE084D5007D83E9 /* BLCommendViewController.h */,
+				EB7742311CE084D5007D83E9 /* BLCommendViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB7742261CE075B3007D83E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB7742271CE075C5007D83E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB7742281CE07837007D83E9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EB77422C1CE07883007D83E9 /* Model */,
+				EB77422B1CE07875007D83E9 /* View */,
+				EB77422A1CE07862007D83E9 /* Controller */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EB77422A1CE07862007D83E9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB77422D1CE078B5007D83E9 /* BLBaseViewController.h */,
+				EB77422E1CE078B5007D83E9 /* BLBaseViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB77422B1CE07875007D83E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB77422C1CE07883007D83E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB7742331CE0A1EE007D83E9 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EB77423B1CE0A2A3007D83E9 /* Assets.xcassets */,
+				EB77423C1CE0A2A3007D83E9 /* Info.plist */,
+				EB77423D1CE0A2A3007D83E9 /* Setting.plist */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		EB7742351CE0A22D007D83E9 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				EBD7C2FE1CD70C7A006F2016 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
 			sourceTree = "<group>";
 		};
 		EBD7C2E41CD70C7A006F2016 = {
@@ -234,11 +329,6 @@
 			isa = PBXGroup;
 			children = (
 				EB7742021CD8B5C8007D83E9 /* Classes */,
-				EBD7C2F61CD70C7A006F2016 /* ViewController.h */,
-				EBD7C2F71CD70C7A006F2016 /* ViewController.m */,
-				EBD7C2FC1CD70C7A006F2016 /* Assets.xcassets */,
-				EBD7C2FE1CD70C7A006F2016 /* LaunchScreen.storyboard */,
-				EBD7C3011CD70C7A006F2016 /* Info.plist */,
 				EBD7C2F01CD70C7A006F2016 /* Supporting Files */,
 			);
 			path = LJKBILIBILI;
@@ -378,8 +468,10 @@
 			files = (
 				EB77421E1CD8ED98007D83E9 /* BLSlidView.xib in Resources */,
 				EBD7C3001CD70C7A006F2016 /* LaunchScreen.storyboard in Resources */,
-				EBD7C2FD1CD70C7A006F2016 /* Assets.xcassets in Resources */,
+				EB77423E1CE0A2A3007D83E9 /* Assets.xcassets in Resources */,
+				EB77423F1CE0A2A3007D83E9 /* Info.plist in Resources */,
 				EBD7C2FB1CD70C7A006F2016 /* Main.storyboard in Resources */,
+				EB7742401CE0A2A3007D83E9 /* Setting.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,15 +544,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBD7C2F81CD70C7A006F2016 /* ViewController.m in Sources */,
-				EB7742101CD8B9DA007D83E9 /* BLTopNavigationBar.m in Sources */,
+				EB7742381CE0A268007D83E9 /* AppDelegate.m in Sources */,
+				EB7742321CE084D5007D83E9 /* BLCommendViewController.m in Sources */,
+				EB77422F1CE078B5007D83E9 /* BLBaseViewController.m in Sources */,
 				EB7742171CD8CEE3007D83E9 /* BLTopView.m in Sources */,
 				EB77420B1CD8B702007D83E9 /* BLHomeViewController.m in Sources */,
 				EB7742081CD8B6D6007D83E9 /* BLNavigationController.m in Sources */,
-				EBD7C2F51CD70C7A006F2016 /* AppDelegate.m in Sources */,
 				EB77421C1CD8ED74007D83E9 /* BLSlidView.m in Sources */,
 				EB7742141CD8CAC8007D83E9 /* BLConst.m in Sources */,
-				EBD7C2F21CD70C7A006F2016 /* main.m in Sources */,
+				EB7742231CE03937007D83E9 /* BLMainScrollView.m in Sources */,
+				EB77423A1CE0A27C007D83E9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +604,7 @@
 				EBD7C2FF1CD70C7A006F2016 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -603,7 +697,7 @@
 			baseConfigurationReference = AC28F008A4D1D594A03F4A42 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = LJKBILIBILI/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LJKBILIBILI/Classes/Source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LJK.LJKBILIBILI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -615,7 +709,7 @@
 			baseConfigurationReference = 4936E3804F9914AEEC7F4E42 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = LJKBILIBILI/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LJKBILIBILI/Classes/Source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LJK.LJKBILIBILI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
