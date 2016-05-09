@@ -23,7 +23,7 @@
 
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.bounds];
     scrollView.backgroundColor = [UIColor greenColor];
-    scrollView.contentSize = CGSizeMake(mainScreen.bounds.size.width, mainScreen.bounds.size.height * 2);
+    scrollView.contentSize = CGSizeMake(mainScreen.bounds.size.width, mainScreen.bounds.size.height * 3);
 
     scrollView.delegate = self;
 

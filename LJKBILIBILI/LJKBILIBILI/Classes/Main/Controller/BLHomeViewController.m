@@ -31,6 +31,7 @@
  */
 @property (weak, nonatomic) BLSlidView *slidView;
 
+@property (nonatomic, assign) CGFloat lastY;
 
 @end
 
@@ -88,6 +89,8 @@
     // 添加通知
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(slideView) name:BLShowSlideNotification object:nil];
 
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(moveTopBar:) name:BLScrollToTop object:nil];
+
 
 
     // 主scrollView
@@ -119,12 +122,42 @@
                      }];
 }
 
+- (void)moveTopBar:(NSNotification *)notification
+{
+    // 取出移动的距离
+    CGFloat moveY = [notification.object floatValue];
+    // 上一次的位置减去这一次的位置，得到移动了正负数值  负 上移 / 正 下移
+    CGFloat moveRY = moveY - self.lastY;
+    // 如果>= -70 在第一行范围  并且向上移
+    if (self.topView.transform.ty - moveRY >= -70 && self.topView.transform.ty - moveRY <= 0) {
+        // 移动topView
+        self.topView.transform = CGAffineTransformTranslate(self.topView.transform, 0, -moveRY);
+        // 移动mainScrollView
+        self.mainScrollView.transform = CGAffineTransformTranslate(self.mainScrollView.transform, 0, -moveRY);
+    }
+    // 如果 < -70 那么已经超过了第一行
+    else if (self.topView.transform.ty - moveRY < -70) {
+        // 第一行就不动了
+        self.topView.transform = CGAffineTransformMakeTranslation(0, -70);
+        // mainScrollView也不移动了
+        self.mainScrollView.transform = CGAffineTransformMakeTranslation(0, -70);
+    }
+    // 如果向下移动到最底下   // 这两个都不改变
+    else if (self.topView.transform.ty - moveRY > 0) {
+        self.topView.transform = CGAffineTransformMakeTranslation(0, 0);
+
+        self.mainScrollView.transform = CGAffineTransformMakeTranslation(0, 0);
+    }
+    
+    self.lastY = moveY;
+}
+
+
 #pragma mark - UIScrollView代理方法
 // 当开始滚动的时候调用
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     self.topView.bottomBar.transform = CGAffineTransformMakeTranslation(((scrollView.contentOffset.x - mainScreen.bounds.size.width )/ 6) , 0);
-    NSLog(@"%f",    scrollView.contentOffset.x);
 
 }
 
