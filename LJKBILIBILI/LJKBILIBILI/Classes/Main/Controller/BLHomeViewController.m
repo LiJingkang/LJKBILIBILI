@@ -10,6 +10,7 @@
 #import "BLTopView.h"
 #import "BLConst.h"
 #import "BLSlidView.h"
+#import "UIView+Extension.h"
 
 
 @interface BLHomeViewController () <UIScrollViewDelegate>
@@ -96,10 +97,12 @@
     // 主scrollView
     self.mainScrollView.delegate = self;
 
-    
-
 }
 
+- (void)awakeFromNib
+{
+        [self.mainScrollView setHeight:mainScreen.bounds.size.height];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }

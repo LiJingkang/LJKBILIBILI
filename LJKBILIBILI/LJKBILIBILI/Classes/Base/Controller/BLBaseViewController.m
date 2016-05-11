@@ -24,6 +24,16 @@
 
     self.backgroundColor = BLRandomColor;
 
+
+    UIScrollView *scroll = [[UIScrollView alloc] initWithFrame:frame];
+    scroll.backgroundColor = [UIColor blueColor];
+    scroll.contentSize = CGSizeMake(1000, 1000);
+
+    scroll.alwaysBounceVertical = YES;
+    scroll.delegate = self;
+
+    [self addSubview:scroll];
+
     return self;
 }
 

@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BLADCell : UIView
+@interface BLADCell : UICollectionViewCell
 
 
 + (instancetype)adCell;
+
+@property (nonatomic,weak) id<UICollectionViewDelegate> delegate;
+
+/**
+ *  设置代理
+ */
+- (void)setScrollViewDelegate:(id)controller;
 
 @end

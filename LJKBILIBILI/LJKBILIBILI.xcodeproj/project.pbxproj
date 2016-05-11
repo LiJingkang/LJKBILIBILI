@@ -53,6 +53,10 @@
 		EB7742B61CE23324007D83E9 /* BLBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742B01CE23324007D83E9 /* BLBaseCell.m */; };
 		EB7742B71CE23324007D83E9 /* BLADCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742B31CE23324007D83E9 /* BLADCell.m */; };
 		EB7742B81CE23324007D83E9 /* BLADCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7742B41CE23324007D83E9 /* BLADCell.xib */; };
+		EB7742BB1CE29A4D007D83E9 /* BLCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742BA1CE29A4D007D83E9 /* BLCellItem.m */; };
+		EB7742BD1CE29A5C007D83E9 /* BLCellItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7742BC1CE29A5C007D83E9 /* BLCellItem.xib */; };
+		EB7742C01CE33786007D83E9 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742BF1CE33786007D83E9 /* UIView+Extension.m */; };
+		EB7742C31CE363F9007D83E9 /* BLCommendViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742C21CE363F9007D83E9 /* BLCommendViewLayout.m */; };
 		EBD7C2FB1CD70C7A006F2016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7C2F91CD70C7A006F2016 /* Main.storyboard */; };
 		EBD7C3001CD70C7A006F2016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7C2FE1CD70C7A006F2016 /* LaunchScreen.storyboard */; };
 		EBD7C30B1CD70C7A006F2016 /* LJKBILIBILITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7C30A1CD70C7A006F2016 /* LJKBILIBILITests.m */; };
@@ -165,6 +169,13 @@
 		EB7742B21CE23324007D83E9 /* BLADCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLADCell.h; sourceTree = "<group>"; };
 		EB7742B31CE23324007D83E9 /* BLADCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLADCell.m; sourceTree = "<group>"; };
 		EB7742B41CE23324007D83E9 /* BLADCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLADCell.xib; sourceTree = "<group>"; };
+		EB7742B91CE29A4D007D83E9 /* BLCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCellItem.h; sourceTree = "<group>"; };
+		EB7742BA1CE29A4D007D83E9 /* BLCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCellItem.m; sourceTree = "<group>"; };
+		EB7742BC1CE29A5C007D83E9 /* BLCellItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLCellItem.xib; sourceTree = "<group>"; };
+		EB7742BE1CE33786007D83E9 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		EB7742BF1CE33786007D83E9 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		EB7742C11CE363F9007D83E9 /* BLCommendViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCommendViewLayout.h; sourceTree = "<group>"; };
+		EB7742C21CE363F9007D83E9 /* BLCommendViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCommendViewLayout.m; sourceTree = "<group>"; };
 		EBD7C2ED1CD70C7A006F2016 /* LJKBILIBILI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJKBILIBILI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD7C2FA1CD70C7A006F2016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBD7C2FF1CD70C7A006F2016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -331,6 +342,8 @@
 		EB7742261CE075B3007D83E9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EB7742C11CE363F9007D83E9 /* BLCommendViewLayout.h */,
+				EB7742C21CE363F9007D83E9 /* BLCommendViewLayout.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -409,6 +422,8 @@
 		EB7742451CE1DAB5007D83E9 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				EB7742BE1CE33786007D83E9 /* UIView+Extension.h */,
+				EB7742BF1CE33786007D83E9 /* UIView+Extension.m */,
 				EB7742461CE1DAE4007D83E9 /* Foundation+Log.m */,
 			);
 			path = Categories;
@@ -502,6 +517,9 @@
 				EB7742B21CE23324007D83E9 /* BLADCell.h */,
 				EB7742B31CE23324007D83E9 /* BLADCell.m */,
 				EB7742B41CE23324007D83E9 /* BLADCell.xib */,
+				EB7742B91CE29A4D007D83E9 /* BLCellItem.h */,
+				EB7742BA1CE29A4D007D83E9 /* BLCellItem.m */,
+				EB7742BC1CE29A5C007D83E9 /* BLCellItem.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -673,6 +691,7 @@
 				EB77421E1CD8ED98007D83E9 /* BLSlidView.xib in Resources */,
 				EBD7C3001CD70C7A006F2016 /* LaunchScreen.storyboard in Resources */,
 				EB77423E1CE0A2A3007D83E9 /* Assets.xcassets in Resources */,
+				EB7742BD1CE29A5C007D83E9 /* BLCellItem.xib in Resources */,
 				EB77423F1CE0A2A3007D83E9 /* Info.plist in Resources */,
 				EBD7C2FB1CD70C7A006F2016 /* Main.storyboard in Resources */,
 				EB7742401CE0A2A3007D83E9 /* Setting.plist in Resources */,
@@ -753,6 +772,7 @@
 				EB7742A21CE22268007D83E9 /* SDWebImageManager.m in Sources */,
 				EB7742B71CE23324007D83E9 /* BLADCell.m in Sources */,
 				EB7742321CE084D5007D83E9 /* BLCommendViewController.m in Sources */,
+				EB7742BB1CE29A4D007D83E9 /* BLCellItem.m in Sources */,
 				EB7742441CE0B739007D83E9 /* BLHttpTool.m in Sources */,
 				EB77422F1CE078B5007D83E9 /* BLBaseViewController.m in Sources */,
 				EB7742B61CE23324007D83E9 /* BLBaseCell.m in Sources */,
@@ -762,6 +782,7 @@
 				EB7742171CD8CEE3007D83E9 /* BLTopView.m in Sources */,
 				EB77420B1CD8B702007D83E9 /* BLHomeViewController.m in Sources */,
 				EB7742661CE206B7007D83E9 /* MJFoundation.m in Sources */,
+				EB7742C31CE363F9007D83E9 /* BLCommendViewLayout.m in Sources */,
 				EB7742AA1CE22268007D83E9 /* UIView+WebCacheOperation.m in Sources */,
 				EB77426A1CE206B7007D83E9 /* NSObject+MJIvar.m in Sources */,
 				EB7742A91CE22268007D83E9 /* UIImageView+WebCache.m in Sources */,
@@ -771,6 +792,7 @@
 				EB7742A61CE22268007D83E9 /* UIImage+MultiFormat.m in Sources */,
 				EB7742A11CE22268007D83E9 /* SDWebImageDownloaderOperation.m in Sources */,
 				EB77426B1CE206B7007D83E9 /* NSObject+MJKeyValue.m in Sources */,
+				EB7742C01CE33786007D83E9 /* UIView+Extension.m in Sources */,
 				EB7742A81CE22268007D83E9 /* UIImageView+HighlightedWebCache.m in Sources */,
 				EB7742081CD8B6D6007D83E9 /* BLNavigationController.m in Sources */,
 				EB7742681CE206B7007D83E9 /* MJType.m in Sources */,

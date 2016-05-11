@@ -162,13 +162,13 @@
                                 </variation>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qRe-zq-sjl" userLabel="Main Scroll View" customClass="BLMainScrollView">
-                                <rect key="frame" x="0.0" y="114" width="600" height="486"/>
+                                <rect key="frame" x="0.0" y="114" width="600" height="556"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="qRe-zq-sjl" firstAttribute="top" secondItem="y08-yo-4rW" secondAttribute="bottom" constant="14" id="6mX-qQ-AMl"/>
-                            <constraint firstItem="IMJ-pL-gjO" firstAttribute="top" secondItem="qRe-zq-sjl" secondAttribute="bottom" id="BAQ-p0-Tww"/>
+                            <constraint firstItem="IMJ-pL-gjO" firstAttribute="top" secondItem="qRe-zq-sjl" secondAttribute="bottom" constant="-70" id="BAQ-p0-Tww"/>
                             <constraint firstItem="qRe-zq-sjl" firstAttribute="top" secondItem="y08-yo-4rW" secondAttribute="bottom" id="EuF-BI-KjB"/>
                             <constraint firstItem="y08-yo-4rW" firstAttribute="top" secondItem="1Z0-Kx-nBN" secondAttribute="top" id="Gse-HK-62O"/>
                             <constraint firstAttribute="trailing" secondItem="qRe-zq-sjl" secondAttribute="trailing" id="JkS-w1-Nn3"/>
@@ -190,6 +190,7 @@
                                 <exclude reference="jd2-QS-ic3"/>
                                 <exclude reference="6mX-qQ-AMl"/>
                                 <exclude reference="aKH-D4-zsI"/>
+                                <exclude reference="e3y-HO-4Ke"/>
                                 <exclude reference="eqs-0w-GVu"/>
                                 <exclude reference="ezk-YQ-E6r"/>
                                 <exclude reference="izk-dS-Dc5"/>
