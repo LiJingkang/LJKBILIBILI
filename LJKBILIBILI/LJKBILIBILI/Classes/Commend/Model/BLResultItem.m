@@ -8,14 +8,14 @@
 
 #import "BLResultItem.h"
 #import "MJExtension.h"
-#import "BLBaseCell.h"
+#import "BLBaseCellModel.h"
 
 @implementation BLResultItem
 
 
 - (NSDictionary *)objectClassInArray
 {
-    return @{@"body" : [BLBaseCell class]};
+    return @{@"body" : [BLBaseCellModel class]};
 }
 
 @end

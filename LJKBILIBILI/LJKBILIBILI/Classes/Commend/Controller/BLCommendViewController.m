@@ -15,22 +15,32 @@
 #import "BLADCell.h"
 #import "BLCellItem.h"
 #import "UIView+Extension.h"
+#import "YiRefreshHeader.h"
 
 
 #define firstUrl @"http://app.bilibili.com/bangumi/operation_module?_device=android&_hwid=130a7709aeac1793&_ulv=10000&access_key=b938b895c8a7a0af574a6ae76f5631c8&appkey=c1b107428d337928&build=402003&module=index&platform=android&screen=xxhdpi&test=0&ts=1450884356000"
 
 #define BLCellItemID @"BLCellItem"
 #define BLADCellID @"BLADCell"
+#define BLCellItem_2_ID @"BLCellItem_2"
+#define BLTopicCellID @"BLTopicCell"
+#define BLScrollCellID @"BLScrollCell"
+
 
 @interface BLCommendViewController () <UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate>
 {
     UICollectionView *_collectionView;
+    // 获取头部刷新组件
+    YiRefreshHeader* refreshHeader;
 }
 
 /**
  *  请求返回的结果数组。 / 里面存放的是Item的模型
  */
 @property (nonatomic, strong) NSArray *resultItemArray;
+
+
+//@property (nonatomic, weak) UIScrollView* scrollView; // 头部刷新使用
 
 
 
@@ -44,25 +54,29 @@
 {
     self = [super initWithFrame:frame];
 
-    
-//    BLADCell *ADCell = [BLADCell adCell];
 
-//
-//
-//    [self addSubview:ADCell];
-
-
-
-
-
+    __weak typeof(self) weakSelf = self;
 
     [self initCollectionView];
 
-    [self getCommendListModel];
+    // YiRefreshHeader  头部刷新按钮的使用
+    refreshHeader = [[YiRefreshHeader alloc] init];
+    refreshHeader.scrollView = _collectionView; // 设置refreshHeader要刷新的scrollView
+    [refreshHeader header]; // 刷新头部
+    refreshHeader.beginRefreshingBlock = ^() {
+        // 后台执行：
+        [weakSelf refresh];
+    };
+    // 是否在进入该界面的时候就开始进入刷新状态
+    [refreshHeader beginRefreshing];
 
     return self;
 }
 
+- (void)refresh
+{
+    [self getCommendListModel];
+}
 
 #pragma mark - 私有方法
 /**
@@ -80,6 +94,8 @@
                      // 字典数组 ---> 模型数组
                     NSArray *resultItemArray = [BLResultItem objectArrayWithKeyValuesArray:resultArray];
                     self.resultItemArray = resultItemArray;
+                    [_collectionView reloadData]; // 获取数据以后刷新collectionView
+                    [refreshHeader endRefreshing];  // 停止刷新
                     }
             failure:^(NSError *error) {
 
@@ -102,7 +118,7 @@
 
     // 新建collectionView
     _collectionView = [[UICollectionView alloc]
-                       initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)
+                       initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height- 44)
                        collectionViewLayout:layout];
     _collectionView.backgroundColor = [UIColor redColor];
 
@@ -110,22 +126,19 @@
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
     _collectionView.alwaysBounceVertical = YES; // 垂直方向永远可以滚动
-    _collectionView.bounces = NO;
+    _collectionView.bounces = YES;
 
     // 注册cell
     [_collectionView registerNib:[UINib nibWithNibName:@"BLCellItem" bundle:[NSBundle mainBundle]]forCellWithReuseIdentifier:BLCellItemID];
 
     [_collectionView registerNib:[UINib nibWithNibName:@"BLADCell" bundle:[NSBundle mainBundle]]forCellWithReuseIdentifier:BLADCellID];
 
+    [_collectionView registerNib:[UINib nibWithNibName:@"BLCellItem2" bundle:[NSBundle mainBundle]]forCellWithReuseIdentifier:BLCellItem_2_ID];
 
+    [_collectionView registerNib:[UINib nibWithNibName:@"BLTopicCell" bundle:[NSBundle mainBundle]]forCellWithReuseIdentifier:BLTopicCellID];
 
-    // 注册SupplementaryView
-//    [_collectionView registerNib:[UINib nibWithNibName:@"BLADCell" bundle:[NSBundle mainBundle]]
-//      forSupplementaryViewOfKind:@"ADCell" withReuseIdentifier:@"ADCell"];
+    [_collectionView registerNib:[UINib nibWithNibName:@"BLScrollCell" bundle:[NSBundle mainBundle]]forCellWithReuseIdentifier:BLScrollCellID];
 
-
-
-    
     
     // 添加到父视图
     [self addSubview:_collectionView];
@@ -144,7 +157,7 @@
  */
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 3;
+    return 16;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -153,15 +166,42 @@
 
     // 通过判断重新复制来返回cell 来实现对不同cell显示
     if (indexPath.section == 0) {
-        if (indexPath.row == 0) {
+        if (indexPath.row == 0) // ADCell
+        {
                cell = (UICollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:BLADCellID forIndexPath:indexPath];
                return cell;
-
         };
-//        if (indexPath.row == 1) {
-            cell = (UICollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:BLCellItemID forIndexPath:indexPath];
-//        };
+        if (indexPath.row == 4) // CellItem_2
+        {
+            cell = (UICollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:BLCellItem_2_ID forIndexPath:indexPath];
+            return cell;
+        };
+        if (indexPath.row == 5) // 话题Cell
+        {
+            cell = (UICollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:BLTopicCellID forIndexPath:indexPath];
+            return cell;
+        };
+        if (indexPath.row == 7) // 话题Cell
+        {
+            cell = (UICollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:BLTopicCellID forIndexPath:indexPath];
+            return cell;
+        };
+        if (indexPath.row == 14) // 话题Cell
+        {
+            cell = (UICollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:BLScrollCellID forIndexPath:indexPath];
+            return cell;
+        };
 
+        BLCellItem *cellItem = [collectionView dequeueReusableCellWithReuseIdentifier:BLCellItemID forIndexPath:indexPath];
+        // 取出对应的模型
+        if (self.resultItemArray) {
+            BLResultItem *cellModel = self.resultItemArray[indexPath.row - 1];
+            // 将模型传递
+            cellItem.resultItemModel = cellModel;
+        }
+
+
+        return cellItem;
     }
 
     return cell;
@@ -186,16 +226,27 @@
 {
 
     if (indexPath.section == 0) {
-        if (indexPath.row == 0)
+        if (indexPath.row == 0) // ADCell
         {
         return CGSizeMake(mainScreen.bounds.size.width, ((mainScreen.bounds.size.width/640)*200));
         }
-//        if (indexPath.row == 1) {
-        return CGSizeMake(mainScreen.bounds.size.width, mainScreen.bounds.size.width);
-//        }
+        if (indexPath.row == 4) { // itemCell_2
+            return CGSizeMake(mainScreen.bounds.size.width, ((mainScreen.bounds.size.width/600)*180));
+        }
+        if (indexPath.row == 5) { // topicCell
+            return CGSizeMake(mainScreen.bounds.size.width, ((mainScreen.bounds.size.width/600)*200));
+        }
+        if (indexPath.row == 7) { // topicCell
+            return CGSizeMake(mainScreen.bounds.size.width, ((mainScreen.bounds.size.width/600)*200));
+        }
+        if (indexPath.row == 14) // 话题Cell
+        {
+            return CGSizeMake(mainScreen.bounds.size.width, ((mainScreen.bounds.size.width/600)*400));
+        };
+
     }
 
-    return CGSizeZero;
+    return CGSizeMake(mainScreen.bounds.size.width, ((mainScreen.bounds.size.width/600)*500));
 }
 
 //#pragma mark - ScrollView

@@ -1,15 +1,14 @@
 //
-//  BLBaseCell.h
+//  BLBaseCellModel.h
 //  LJKBILIBILI
 //
-//  Created by 李泾康 on 16/5/10.
+//  Created by 李泾康 on 16/5/12.
 //  Copyright © 2016年 LJK. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface BLBaseCell : NSObject
-
+@interface BLBaseCellModel : NSObject
 
 /**
  *  cell的标题
@@ -26,7 +25,7 @@
 @property (nonatomic, copy) NSString *param;
 
 /**
- *  goto 
+ *  goto
  */
 @property (nonatomic, copy) NSString *goto_change;
 

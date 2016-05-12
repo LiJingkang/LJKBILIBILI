@@ -50,13 +50,23 @@
 		EB7742A91CE22268007D83E9 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742981CE22268007D83E9 /* UIImageView+WebCache.m */; };
 		EB7742AA1CE22268007D83E9 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77429A1CE22268007D83E9 /* UIView+WebCacheOperation.m */; };
 		EB7742B51CE23324007D83E9 /* BLADModal.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742AE1CE23324007D83E9 /* BLADModal.m */; };
-		EB7742B61CE23324007D83E9 /* BLBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742B01CE23324007D83E9 /* BLBaseCell.m */; };
 		EB7742B71CE23324007D83E9 /* BLADCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742B31CE23324007D83E9 /* BLADCell.m */; };
 		EB7742B81CE23324007D83E9 /* BLADCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7742B41CE23324007D83E9 /* BLADCell.xib */; };
 		EB7742BB1CE29A4D007D83E9 /* BLCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742BA1CE29A4D007D83E9 /* BLCellItem.m */; };
 		EB7742BD1CE29A5C007D83E9 /* BLCellItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7742BC1CE29A5C007D83E9 /* BLCellItem.xib */; };
 		EB7742C01CE33786007D83E9 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742BF1CE33786007D83E9 /* UIView+Extension.m */; };
 		EB7742C31CE363F9007D83E9 /* BLCommendViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742C21CE363F9007D83E9 /* BLCommendViewLayout.m */; };
+		EB7742C71CE45381007D83E9 /* BLCellItem2.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742C51CE45381007D83E9 /* BLCellItem2.m */; };
+		EB7742C81CE45381007D83E9 /* BLCellItem2.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7742C61CE45381007D83E9 /* BLCellItem2.xib */; };
+		EB7742CC1CE45902007D83E9 /* BLTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742CA1CE45902007D83E9 /* BLTopicCell.m */; };
+		EB7742CD1CE45902007D83E9 /* BLTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7742CB1CE45902007D83E9 /* BLTopicCell.xib */; };
+		EB7742D11CE45D22007D83E9 /* BLScrollCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742CF1CE45D22007D83E9 /* BLScrollCell.m */; };
+		EB7742D21CE45D22007D83E9 /* BLScrollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7742D01CE45D22007D83E9 /* BLScrollCell.xib */; };
+		EB7742D81CE46A05007D83E9 /* YiRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742D51CE46A05007D83E9 /* YiRefreshFooter.m */; };
+		EB7742D91CE46A05007D83E9 /* YiRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742D71CE46A05007D83E9 /* YiRefreshHeader.m */; };
+		EB7742E81CE4C179007D83E9 /* BLBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742E71CE4C179007D83E9 /* BLBaseCell.m */; };
+		EB7742EC1CE4C196007D83E9 /* BLBaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7742EB1CE4C196007D83E9 /* BLBaseCell.xib */; };
+		EB7742F21CE4CA0F007D83E9 /* BLBaseCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742F11CE4CA0F007D83E9 /* BLBaseCellModel.m */; };
 		EBD7C2FB1CD70C7A006F2016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7C2F91CD70C7A006F2016 /* Main.storyboard */; };
 		EBD7C3001CD70C7A006F2016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7C2FE1CD70C7A006F2016 /* LaunchScreen.storyboard */; };
 		EBD7C30B1CD70C7A006F2016 /* LJKBILIBILITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7C30A1CD70C7A006F2016 /* LJKBILIBILITests.m */; };
@@ -164,8 +174,6 @@
 		EB77429A1CE22268007D83E9 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		EB7742AD1CE23324007D83E9 /* BLADModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLADModal.h; sourceTree = "<group>"; };
 		EB7742AE1CE23324007D83E9 /* BLADModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLADModal.m; sourceTree = "<group>"; };
-		EB7742AF1CE23324007D83E9 /* BLBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLBaseCell.h; sourceTree = "<group>"; };
-		EB7742B01CE23324007D83E9 /* BLBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLBaseCell.m; sourceTree = "<group>"; };
 		EB7742B21CE23324007D83E9 /* BLADCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLADCell.h; sourceTree = "<group>"; };
 		EB7742B31CE23324007D83E9 /* BLADCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLADCell.m; sourceTree = "<group>"; };
 		EB7742B41CE23324007D83E9 /* BLADCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLADCell.xib; sourceTree = "<group>"; };
@@ -176,6 +184,24 @@
 		EB7742BF1CE33786007D83E9 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		EB7742C11CE363F9007D83E9 /* BLCommendViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCommendViewLayout.h; sourceTree = "<group>"; };
 		EB7742C21CE363F9007D83E9 /* BLCommendViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCommendViewLayout.m; sourceTree = "<group>"; };
+		EB7742C41CE45381007D83E9 /* BLCellItem2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCellItem2.h; sourceTree = "<group>"; };
+		EB7742C51CE45381007D83E9 /* BLCellItem2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCellItem2.m; sourceTree = "<group>"; };
+		EB7742C61CE45381007D83E9 /* BLCellItem2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLCellItem2.xib; sourceTree = "<group>"; };
+		EB7742C91CE45902007D83E9 /* BLTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTopicCell.h; sourceTree = "<group>"; };
+		EB7742CA1CE45902007D83E9 /* BLTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTopicCell.m; sourceTree = "<group>"; };
+		EB7742CB1CE45902007D83E9 /* BLTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLTopicCell.xib; sourceTree = "<group>"; };
+		EB7742CE1CE45D22007D83E9 /* BLScrollCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLScrollCell.h; sourceTree = "<group>"; };
+		EB7742CF1CE45D22007D83E9 /* BLScrollCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLScrollCell.m; sourceTree = "<group>"; };
+		EB7742D01CE45D22007D83E9 /* BLScrollCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLScrollCell.xib; sourceTree = "<group>"; };
+		EB7742D41CE46A05007D83E9 /* YiRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YiRefreshFooter.h; sourceTree = "<group>"; };
+		EB7742D51CE46A05007D83E9 /* YiRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YiRefreshFooter.m; sourceTree = "<group>"; };
+		EB7742D61CE46A05007D83E9 /* YiRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YiRefreshHeader.h; sourceTree = "<group>"; };
+		EB7742D71CE46A05007D83E9 /* YiRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YiRefreshHeader.m; sourceTree = "<group>"; };
+		EB7742E61CE4C179007D83E9 /* BLBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLBaseCell.h; sourceTree = "<group>"; };
+		EB7742E71CE4C179007D83E9 /* BLBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLBaseCell.m; sourceTree = "<group>"; };
+		EB7742EB1CE4C196007D83E9 /* BLBaseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLBaseCell.xib; sourceTree = "<group>"; };
+		EB7742F01CE4CA0F007D83E9 /* BLBaseCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLBaseCellModel.h; sourceTree = "<group>"; };
+		EB7742F11CE4CA0F007D83E9 /* BLBaseCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLBaseCellModel.m; sourceTree = "<group>"; };
 		EBD7C2ED1CD70C7A006F2016 /* LJKBILIBILI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJKBILIBILI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD7C2FA1CD70C7A006F2016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBD7C2FF1CD70C7A006F2016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -260,6 +286,7 @@
 		EB7742041CD8B636007D83E9 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				EB7742D31CE46A05007D83E9 /* YiRefresh */,
 				EB7742791CE22268007D83E9 /* SDWebImage */,
 				EB7742551CE206B7007D83E9 /* MJExtension */,
 			);
@@ -505,8 +532,8 @@
 			children = (
 				EB7742AD1CE23324007D83E9 /* BLADModal.h */,
 				EB7742AE1CE23324007D83E9 /* BLADModal.m */,
-				EB7742AF1CE23324007D83E9 /* BLBaseCell.h */,
-				EB7742B01CE23324007D83E9 /* BLBaseCell.m */,
+				EB7742F01CE4CA0F007D83E9 /* BLBaseCellModel.h */,
+				EB7742F11CE4CA0F007D83E9 /* BLBaseCellModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -514,14 +541,45 @@
 		EB7742B11CE23324007D83E9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EB7742E51CE4BFF3007D83E9 /* BaseCellView */,
 				EB7742B21CE23324007D83E9 /* BLADCell.h */,
 				EB7742B31CE23324007D83E9 /* BLADCell.m */,
 				EB7742B41CE23324007D83E9 /* BLADCell.xib */,
 				EB7742B91CE29A4D007D83E9 /* BLCellItem.h */,
 				EB7742BA1CE29A4D007D83E9 /* BLCellItem.m */,
 				EB7742BC1CE29A5C007D83E9 /* BLCellItem.xib */,
+				EB7742C41CE45381007D83E9 /* BLCellItem2.h */,
+				EB7742C51CE45381007D83E9 /* BLCellItem2.m */,
+				EB7742C61CE45381007D83E9 /* BLCellItem2.xib */,
+				EB7742C91CE45902007D83E9 /* BLTopicCell.h */,
+				EB7742CA1CE45902007D83E9 /* BLTopicCell.m */,
+				EB7742CB1CE45902007D83E9 /* BLTopicCell.xib */,
+				EB7742CE1CE45D22007D83E9 /* BLScrollCell.h */,
+				EB7742CF1CE45D22007D83E9 /* BLScrollCell.m */,
+				EB7742D01CE45D22007D83E9 /* BLScrollCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		EB7742D31CE46A05007D83E9 /* YiRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				EB7742D41CE46A05007D83E9 /* YiRefreshFooter.h */,
+				EB7742D51CE46A05007D83E9 /* YiRefreshFooter.m */,
+				EB7742D61CE46A05007D83E9 /* YiRefreshHeader.h */,
+				EB7742D71CE46A05007D83E9 /* YiRefreshHeader.m */,
+			);
+			path = YiRefresh;
+			sourceTree = "<group>";
+		};
+		EB7742E51CE4BFF3007D83E9 /* BaseCellView */ = {
+			isa = PBXGroup;
+			children = (
+				EB7742E61CE4C179007D83E9 /* BLBaseCell.h */,
+				EB7742E71CE4C179007D83E9 /* BLBaseCell.m */,
+				EB7742EB1CE4C196007D83E9 /* BLBaseCell.xib */,
+			);
+			path = BaseCellView;
 			sourceTree = "<group>";
 		};
 		EBD7C2E41CD70C7A006F2016 = {
@@ -687,11 +745,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB7742D21CE45D22007D83E9 /* BLScrollCell.xib in Resources */,
 				EB7742B81CE23324007D83E9 /* BLADCell.xib in Resources */,
+				EB7742CD1CE45902007D83E9 /* BLTopicCell.xib in Resources */,
 				EB77421E1CD8ED98007D83E9 /* BLSlidView.xib in Resources */,
 				EBD7C3001CD70C7A006F2016 /* LaunchScreen.storyboard in Resources */,
 				EB77423E1CE0A2A3007D83E9 /* Assets.xcassets in Resources */,
+				EB7742C81CE45381007D83E9 /* BLCellItem2.xib in Resources */,
 				EB7742BD1CE29A5C007D83E9 /* BLCellItem.xib in Resources */,
+				EB7742EC1CE4C196007D83E9 /* BLBaseCell.xib in Resources */,
 				EB77423F1CE0A2A3007D83E9 /* Info.plist in Resources */,
 				EBD7C2FB1CD70C7A006F2016 /* Main.storyboard in Resources */,
 				EB7742401CE0A2A3007D83E9 /* Setting.plist in Resources */,
@@ -774,18 +836,22 @@
 				EB7742321CE084D5007D83E9 /* BLCommendViewController.m in Sources */,
 				EB7742BB1CE29A4D007D83E9 /* BLCellItem.m in Sources */,
 				EB7742441CE0B739007D83E9 /* BLHttpTool.m in Sources */,
+				EB7742C71CE45381007D83E9 /* BLCellItem2.m in Sources */,
 				EB77422F1CE078B5007D83E9 /* BLBaseViewController.m in Sources */,
-				EB7742B61CE23324007D83E9 /* BLBaseCell.m in Sources */,
 				EB7742A01CE22268007D83E9 /* SDWebImageDownloader.m in Sources */,
 				EB7742651CE206B7007D83E9 /* MJConst.m in Sources */,
+				EB7742D11CE45D22007D83E9 /* BLScrollCell.m in Sources */,
 				EB77429E1CE22268007D83E9 /* SDWebImageCompat.m in Sources */,
 				EB7742171CD8CEE3007D83E9 /* BLTopView.m in Sources */,
 				EB77420B1CD8B702007D83E9 /* BLHomeViewController.m in Sources */,
 				EB7742661CE206B7007D83E9 /* MJFoundation.m in Sources */,
 				EB7742C31CE363F9007D83E9 /* BLCommendViewLayout.m in Sources */,
+				EB7742D81CE46A05007D83E9 /* YiRefreshFooter.m in Sources */,
 				EB7742AA1CE22268007D83E9 /* UIView+WebCacheOperation.m in Sources */,
+				EB7742F21CE4CA0F007D83E9 /* BLBaseCellModel.m in Sources */,
 				EB77426A1CE206B7007D83E9 /* NSObject+MJIvar.m in Sources */,
 				EB7742A91CE22268007D83E9 /* UIImageView+WebCache.m in Sources */,
+				EB7742D91CE46A05007D83E9 /* YiRefreshHeader.m in Sources */,
 				EB7742A71CE22268007D83E9 /* UIImage+WebP.m in Sources */,
 				EB77429D1CE22268007D83E9 /* SDImageCache.m in Sources */,
 				EB7742501CE2043B007D83E9 /* BLResultItem.m in Sources */,
@@ -800,6 +866,7 @@
 				EB7742671CE206B7007D83E9 /* MJIvar.m in Sources */,
 				EB77421C1CD8ED74007D83E9 /* BLSlidView.m in Sources */,
 				EB7742531CE2049B007D83E9 /* BLResultItemHead.m in Sources */,
+				EB7742CC1CE45902007D83E9 /* BLTopicCell.m in Sources */,
 				EB77429F1CE22268007D83E9 /* SDWebImageDecoder.m in Sources */,
 				EB7742141CD8CAC8007D83E9 /* BLConst.m in Sources */,
 				EB7742691CE206B7007D83E9 /* NSObject+MJCoding.m in Sources */,
@@ -810,6 +877,7 @@
 				EB7742A51CE22268007D83E9 /* UIImage+GIF.m in Sources */,
 				EB7742B51CE23324007D83E9 /* BLADModal.m in Sources */,
 				EB7742471CE1DAE4007D83E9 /* Foundation+Log.m in Sources */,
+				EB7742E81CE4C179007D83E9 /* BLBaseCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
