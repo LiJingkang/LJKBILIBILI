@@ -161,6 +161,7 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     self.topView.bottomBar.transform = CGAffineTransformMakeTranslation(((scrollView.contentOffset.x - mainScreen.bounds.size.width )/ 6) , 0);
+    NSLog(@"HomeViewScroll");
 
 }
 

@@ -8,6 +8,7 @@
 
 #import "BLBaseViewController.h"
 #import "BLConst.h"
+#import "BLADCell.h"
 
 @interface BLBaseViewController () <UIScrollViewDelegate>
 
@@ -24,16 +25,6 @@
 
     self.backgroundColor = BLRandomColor;
 
-
-    UIScrollView *scroll = [[UIScrollView alloc] initWithFrame:frame];
-    scroll.backgroundColor = [UIColor blueColor];
-    scroll.contentSize = CGSizeMake(1000, 1000);
-
-    scroll.alwaysBounceVertical = YES;
-    scroll.delegate = self;
-
-    [self addSubview:scroll];
-
     return self;
 }
 
@@ -44,6 +35,15 @@
     if (scrollView.contentOffset.y > 0) {
         [[NSNotificationCenter defaultCenter] postNotificationName:BLScrollToTop object:@(scrollView.contentOffset.y    )];
     }
+
+
+//        if (scrollCallback_ && ![scrollCallback_ isEqualToString:@""]) {
+//            if (scrollView.contentOffset.y == 0.0) {
+//                [self.rootContentView_ doluaString:[scrollCallback_ stringByReplacingOccurrencesOfString:@"arg_value" withString:@"top"]];
+//            }else if (scrollView.contentOffset.y + scrollView.frame.size.height == scrollView.contentSize.height)
+//                [self.rootContentView_ doluaString:[scrollCallback_ stringByReplacingOccurrencesOfString:@"arg_value" withString:@"bottom"]];
+//        }
+
 }
 
 @end

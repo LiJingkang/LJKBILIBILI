@@ -9,15 +9,16 @@
 #import <UIKit/UIKit.h>
 
 @interface BLADCell : UICollectionViewCell
+//@interface BLADCell : UIView
 
 
 + (instancetype)adCell;
 
-@property (nonatomic,weak) id<UICollectionViewDelegate> delegate;
+//@property (nonatomic,weak) id<UICollectionViewDelegate> delegate;
 
 /**
  *  设置代理
  */
-- (void)setScrollViewDelegate:(id)controller;
+//- (void)setScrollViewDelegate:(id)controller;
 
 @end

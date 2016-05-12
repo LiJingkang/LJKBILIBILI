@@ -97,25 +97,28 @@
         [self.ADScrollView addSubview:imageView];
     }
 
-    self.ADScrollView.contentSize = CGSizeMake(imageW * self.ADItemModelArray.count , imageH); //设置滚动范围
-    NSLog(@"__%f",imageW * self.ADItemModelArray.count);
+    self.ADScrollView.contentSize = CGSizeMake(imageW * self.ADItemModelArray.count , 0); //设置滚动范围
 
-    self.ADScrollView.contentOffset = CGPointMake(0, 0);
     self.ADScrollView.showsHorizontalScrollIndicator = NO;
+    self.ADScrollView.alwaysBounceHorizontal = YES;
+
     self.ADScrollView.pagingEnabled = YES; // 是否分页
     self.ADScrollView.delegate = self;
 
 
 }
 
-#pragma mark - 调用
-- (void)setScrollViewDelegate:(id)controller
-{
-    self.ADScrollView.delegate = controller;
-}
+//#pragma mark - 调用
+//- (void)setScrollViewDelegate:(id)controller
+//{
+//    self.ADScrollView.delegate = controller;
+//}
 
 #pragma mark - scrollViewDelegate
-
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    NSLog(@"我是ADCell");
+}
 
 
 

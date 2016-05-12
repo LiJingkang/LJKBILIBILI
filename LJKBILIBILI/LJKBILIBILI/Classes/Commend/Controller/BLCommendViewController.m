@@ -45,12 +45,11 @@
     self = [super initWithFrame:frame];
 
     
-    BLADCell *ADCell = [BLADCell adCell];
-    //  bug 原因，要在调用它的主控制器里面设置xib的frame。如果不设置的话它将使用自己默认的xib里面的高
-    ADCell.width = mainScreen.bounds.size.width; // 640 200
+//    BLADCell *ADCell = [BLADCell adCell];
 
-
-    [self addSubview:ADCell];
+//
+//
+//    [self addSubview:ADCell];
 
 
 
@@ -111,7 +110,7 @@
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
     _collectionView.alwaysBounceVertical = YES; // 垂直方向永远可以滚动
-    _collectionView.bounces = YES;
+    _collectionView.bounces = NO;
 
     // 注册cell
     [_collectionView registerNib:[UINib nibWithNibName:@"BLCellItem" bundle:[NSBundle mainBundle]]forCellWithReuseIdentifier:BLCellItemID];
@@ -145,27 +144,27 @@
  */
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 2;
+    return 3;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-//    NSObject *cell = [[UICollectionViewCell alloc] init];
-//
-//    // 通过判断重新复制来返回cell 来实现对不同cell显示
-//    if (indexPath.section == 0) {
-//        if (indexPath.row == 0) {
-               BLADCell * adCell = [collectionView dequeueReusableCellWithReuseIdentifier:BLADCellID forIndexPath:indexPath];
-            [adCell setScrollViewDelegate:self];
-    return adCell;
-//
-//        };
+    UICollectionViewCell *cell = [[UICollectionViewCell alloc] init];
+
+    // 通过判断重新复制来返回cell 来实现对不同cell显示
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+               cell = (UICollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:BLADCellID forIndexPath:indexPath];
+               return cell;
+
+        };
 //        if (indexPath.row == 1) {
-//            cell = (UICollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:BLCellItemID forIndexPath:indexPath];
+            cell = (UICollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:BLCellItemID forIndexPath:indexPath];
 //        };
-//
-//    }
-//    return cell;
+
+    }
+
+    return cell;
 }
 
 #pragma mark CollectionView Delegate
@@ -186,9 +185,17 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
 
-    return CGSizeMake(mainScreen.bounds.size.width, mainScreen.bounds.size.width);
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0)
+        {
+        return CGSizeMake(mainScreen.bounds.size.width, ((mainScreen.bounds.size.width/640)*200));
+        }
+//        if (indexPath.row == 1) {
+        return CGSizeMake(mainScreen.bounds.size.width, mainScreen.bounds.size.width);
+//        }
+    }
 
-
+    return CGSizeZero;
 }
 
 //#pragma mark - ScrollView
