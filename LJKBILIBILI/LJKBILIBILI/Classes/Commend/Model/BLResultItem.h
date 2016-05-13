@@ -16,7 +16,7 @@
 @property (nonatomic, strong) BLResultItemHead *head;
 
 /**
- *  存放的是BaseCell模型
+ *  存放的是BLBaseCellModel模型
  */
 @property (nonatomic, strong) NSArray *body;
 

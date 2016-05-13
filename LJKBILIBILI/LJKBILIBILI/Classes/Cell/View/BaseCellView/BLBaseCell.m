@@ -7,16 +7,47 @@
 //
 
 #import "BLBaseCell.h"
+#import "UIView+WebCacheOperation.h"
+#import "UIImageView+WebCache.h"
+
+@interface BLBaseCell ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *ImageView;
+
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *playNumber;
+
+@property (weak, nonatomic) IBOutlet UILabel *commentNumber;
+
+/**
+ *  传入的模型
+ */
+@property (nonatomic, strong) BLBaseCellModel *baseCellModel;
+
+@end
+
 
 @implementation BLBaseCell
 
-#pragma mark - 成员属性
-- (void)setCellModel:(BLBaseCellModel *)cellModel
+#pragma mark - 私有方法
+- (void)setBaseCellModel:(BLBaseCellModel *)cellModel
 {
-//    _cellModel = cellModel;
+    if (cellModel) {
 
-    NSLog(@"我是傻逼_setCellModel");
-    
+        self.backgroundColor = [UIColor clearColor];
+        _baseCellModel = cellModel;
+        self.ImageView.contentMode = UIViewContentModeScaleAspectFill;  // 设置显示内容方式
+        self.ImageView.clipsToBounds = YES; // 超出图片部分裁剪
+        [self.ImageView sd_setImageWithURL:[NSURL URLWithString:self.baseCellModel.cover]];
+        self.titleLabel.text = self.baseCellModel.title;
+        self.titleLabel.backgroundColor = [UIColor clearColor];
+
+        self.playNumber.text = self.baseCellModel.play;
+
+        self.commentNumber.text = [NSString stringWithFormat:@"%ld",self.baseCellModel.danmaku];
+    }
+
 }
 
 

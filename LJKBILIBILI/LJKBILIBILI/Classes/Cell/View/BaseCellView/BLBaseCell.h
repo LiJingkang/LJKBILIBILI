@@ -11,10 +11,11 @@
 
 @interface BLBaseCell : UIView
 
-@property (nonatomic, strong) BLBaseCellModel *cellModel;
+- (void)setBaseCellModel:(BLBaseCellModel *)cellModel;
 
 /**
  *  初始化
  */
 + (instancetype)cellWithNib;
+
 @end

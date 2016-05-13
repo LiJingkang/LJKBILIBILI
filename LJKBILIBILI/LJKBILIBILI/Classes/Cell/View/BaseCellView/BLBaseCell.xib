@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BLBaseCell">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -19,9 +19,9 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qba-DC-qv3">
                     <rect key="frame" x="0.0" y="360" width="600" height="240"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9i-rb-4ey">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="m9i-rb-4ey">
                             <rect key="frame" x="5" y="3" width="590" height="219"/>
-                            <color key="backgroundColor" red="0.9206563807" green="0.71036940329999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
@@ -71,7 +71,7 @@
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" red="1" green="0.29222209030000001" blue="0.094727753349999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="m9i-rb-4ey" firstAttribute="leading" secondItem="qba-DC-qv3" secondAttribute="leading" constant="5" id="BDS-H4-MfJ"/>
                         <constraint firstAttribute="trailing" secondItem="rUs-sI-IDw" secondAttribute="trailing" constant="30" id="H6w-LF-C4z"/>
@@ -88,7 +88,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="qba-DC-qv3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6Aw-vm-Uyf"/>
                 <constraint firstItem="qba-DC-qv3" firstAttribute="top" secondItem="IKz-V0-yK4" secondAttribute="bottom" id="81D-fq-6Hh"/>
@@ -105,6 +105,12 @@
                     <exclude reference="81D-fq-6Hh"/>
                 </mask>
             </variation>
+            <connections>
+                <outlet property="ImageView" destination="IKz-V0-yK4" id="dbw-Rw-Yem"/>
+                <outlet property="commentNumber" destination="rUs-sI-IDw" id="v4D-hQ-C7A"/>
+                <outlet property="playNumber" destination="oBv-6F-AaQ" id="aAm-YS-Zmm"/>
+                <outlet property="titleLabel" destination="m9i-rb-4ey" id="HSS-Ni-MUm"/>
+            </connections>
             <point key="canvasLocation" x="271" y="181"/>
         </view>
     </objects>

@@ -54,6 +54,8 @@
 {
     self = [super initWithFrame:frame];
 
+    self.backgroundColor = BLColor(229, 229, 223);
+
 
     __weak typeof(self) weakSelf = self;
 
@@ -120,7 +122,7 @@
     _collectionView = [[UICollectionView alloc]
                        initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height- 44)
                        collectionViewLayout:layout];
-    _collectionView.backgroundColor = [UIColor redColor];
+    _collectionView.backgroundColor = BLColor(239, 239, 239);
 
 
     _collectionView.delegate = self;
@@ -157,53 +159,54 @@
  */
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 16;
+    return self.resultItemArray.count + 1;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [[UICollectionViewCell alloc] init];
 
-    // 通过判断重新复制来返回cell 来实现对不同cell显示
-    if (indexPath.section == 0) {
-        if (indexPath.row == 0) // ADCell
-        {
-               cell = (UICollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:BLADCellID forIndexPath:indexPath];
-               return cell;
-        };
-        if (indexPath.row == 4) // CellItem_2
-        {
-            cell = (UICollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:BLCellItem_2_ID forIndexPath:indexPath];
-            return cell;
-        };
-        if (indexPath.row == 5) // 话题Cell
-        {
-            cell = (UICollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:BLTopicCellID forIndexPath:indexPath];
-            return cell;
-        };
-        if (indexPath.row == 7) // 话题Cell
-        {
-            cell = (UICollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:BLTopicCellID forIndexPath:indexPath];
-            return cell;
-        };
-        if (indexPath.row == 14) // 话题Cell
-        {
-            cell = (UICollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:BLScrollCellID forIndexPath:indexPath];
-            return cell;
-        };
 
+    // 如果有有值
+    if (self.resultItemArray)
+    {
+        UICollectionViewCell *cell = [[UICollectionViewCell alloc] init];
+            if (indexPath.row == 0)
+            { // 第一个 返回ADCell
+                cell = (UICollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:BLADCellID forIndexPath:indexPath];
+                return cell;
+            }
+            // 取出模型
+            BLResultItem *item = self.resultItemArray[indexPath.row -1];
+            if (item.type == nil)
+            {   // 周刊排行版
+             cell = (UICollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:BLCellItem_2_ID forIndexPath:indexPath];
+                return cell;
+
+            }
+            if ([item.type isEqualToString:@"weblink"])
+            {   // 话题
+                cell = (UICollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:BLTopicCellID forIndexPath:indexPath];
+                return cell;
+            }
+             if ([item.type isEqualToString:@"bangumi_3"])
+            {   // ScrollCell
+              cell = (UICollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:BLScrollCellID forIndexPath:indexPath];
+              return cell;
+            }
+    }
+
+    if (self.resultItemArray)
+    {
         BLCellItem *cellItem = [collectionView dequeueReusableCellWithReuseIdentifier:BLCellItemID forIndexPath:indexPath];
         // 取出对应的模型
-        if (self.resultItemArray) {
-            BLResultItem *cellModel = self.resultItemArray[indexPath.row - 1];
-            // 将模型传递
-            cellItem.resultItemModel = cellModel;
-        }
-
-
+        BLResultItem *cellModel = self.resultItemArray[indexPath.row - 1];
+        // 将模型传递
+        cellItem.resultItemModel = cellModel; // ResultItem 模型
+        
         return cellItem;
     }
 
+    BLCellItem *cell = [collectionView dequeueReusableCellWithReuseIdentifier:BLCellItemID forIndexPath:indexPath];
     return cell;
 }
 
@@ -224,27 +227,24 @@
 // 用来布局每个cell的大小
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-
-    if (indexPath.section == 0) {
-        if (indexPath.row == 0) // ADCell
-        {
-        return CGSizeMake(mainScreen.bounds.size.width, ((mainScreen.bounds.size.width/640)*200));
+        if (indexPath.row == 0)
+        { // 第一个 返回ADCell
+            return CGSizeMake(mainScreen.bounds.size.width, ((mainScreen.bounds.size.width/640)*200));
         }
-        if (indexPath.row == 4) { // itemCell_2
+        // 取出模型
+        BLResultItem *item = self.resultItemArray[indexPath.row -1];
+        if (item.type == nil)
+        {   // 周刊排行版
             return CGSizeMake(mainScreen.bounds.size.width, ((mainScreen.bounds.size.width/600)*180));
         }
-        if (indexPath.row == 5) { // topicCell
+        if ([item.type isEqualToString:@"weblink"])
+        {   // 话题
             return CGSizeMake(mainScreen.bounds.size.width, ((mainScreen.bounds.size.width/600)*200));
         }
-        if (indexPath.row == 7) { // topicCell
-            return CGSizeMake(mainScreen.bounds.size.width, ((mainScreen.bounds.size.width/600)*200));
-        }
-        if (indexPath.row == 14) // 话题Cell
-        {
+        if ([item.type isEqualToString:@"bangumi_3"])
+        {   // ScrollCell
             return CGSizeMake(mainScreen.bounds.size.width, ((mainScreen.bounds.size.width/600)*400));
-        };
-
-    }
+        }
 
     return CGSizeMake(mainScreen.bounds.size.width, ((mainScreen.bounds.size.width/600)*500));
 }

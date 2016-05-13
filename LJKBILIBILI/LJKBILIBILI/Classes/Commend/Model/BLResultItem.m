@@ -13,9 +13,12 @@
 @implementation BLResultItem
 
 
+
+
 - (NSDictionary *)objectClassInArray
 {
-    return @{@"body" : [BLBaseCellModel class]};
+    return @{@"body" : [BLBaseCellModel class]}; // 将body数组里面转换为BLBaseCellModel模型
 }
+
 
 @end
