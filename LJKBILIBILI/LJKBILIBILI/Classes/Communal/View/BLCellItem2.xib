@@ -19,6 +19,9 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="44" id="SGY-wo-6ei"/>
                         </constraints>
+                        <connections>
+                            <action selector="button_1DidClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="s9M-tF-SIg"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ql-1U-a7u">
                         <rect key="frame" x="20" y="64" width="530" height="94"/>

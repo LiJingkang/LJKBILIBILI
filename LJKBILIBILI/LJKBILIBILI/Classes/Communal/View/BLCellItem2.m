@@ -8,10 +8,13 @@
 
 #import "BLCellItem2.h"
 
+
+
 @implementation BLCellItem2
 
 - (void)awakeFromNib {
     // Initialization code
 }
+
 
 @end

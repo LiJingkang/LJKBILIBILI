@@ -11,6 +11,7 @@
 #import "BLConst.h"
 #import "BLSlidView.h"
 #import "UIView+Extension.h"
+#import "BLOnePlayController.h"
 
 
 @interface BLHomeViewController () <UIScrollViewDelegate>
@@ -92,6 +93,8 @@
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(moveTopBar:) name:BLScrollToTop object:nil];
 
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(baseCellDidClick:) name:BLBaseCellDidClick object:nil];
+
 
 
     // 主scrollView
@@ -153,6 +156,17 @@
     }
     
     self.lastY = moveY;
+}
+
+/**
+ *  点击baceCell事件 / 弹出播放控制器
+ */
+- (void)baseCellDidClick:(NSNotification *)notification
+{
+    BLOnePlayController *onePlay = [BLOnePlayController onePlayController];
+
+    [self.navigationController pushViewController:onePlay animated:YES];
+
 }
 
 

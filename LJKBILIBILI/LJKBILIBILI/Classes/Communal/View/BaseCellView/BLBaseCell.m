@@ -9,6 +9,7 @@
 #import "BLBaseCell.h"
 #import "UIView+WebCacheOperation.h"
 #import "UIImageView+WebCache.h"
+#import "BLConst.h"
 
 @interface BLBaseCell ()
 
@@ -19,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *playNumber;
 
 @property (weak, nonatomic) IBOutlet UILabel *commentNumber;
+- (IBAction)clickButton:(id)sender;
 
 /**
  *  传入的模型
@@ -58,4 +60,9 @@
     return [[[NSBundle mainBundle] loadNibNamed:@"BLBaseCell" owner:nil options:nil] lastObject];
 }
 
+- (IBAction)clickButton:(id)sender {
+    // 点击的时候发出通知
+    [[NSNotificationCenter defaultCenter] postNotificationName:BLBaseCellDidClick object:self.baseCellModel];
+
+}
 @end

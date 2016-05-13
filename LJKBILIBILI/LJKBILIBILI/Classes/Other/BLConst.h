@@ -23,6 +23,8 @@ extern NSString *const BLShowSlideNotification;  // 隐藏SlideView
 
 extern NSString *const BLScrollToTop;  // 向上滚动
 
+extern NSString *const BLBaseCellDidClick;  // 点击
+
 
 
 typedef enum : NSUInteger {

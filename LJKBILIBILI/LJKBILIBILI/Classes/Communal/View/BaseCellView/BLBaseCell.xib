@@ -12,6 +12,13 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oC-s9-SJK">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="360"/>
+                    <color key="backgroundColor" red="0.92307741570000001" green="1" blue="0.67724035549999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="clickButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="J2L-be-5kL"/>
+                    </connections>
+                </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IKz-V0-yK4">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="360"/>
                     <color key="backgroundColor" red="0.92307741570000001" green="1" blue="0.67724035549999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -35,7 +42,7 @@
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="播放数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBv-6F-AaQ">
-                            <rect key="frame" x="18" y="223.5" width="33" height="13.5"/>
+                            <rect key="frame" x="18" y="223" width="33" height="13.5"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="33" id="PUd-IY-qYZ"/>
                             </constraints>
@@ -49,7 +56,7 @@
                             </variation>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="评论数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUs-sI-IDw">
-                            <rect key="frame" x="537" y="223.5" width="33" height="13.5"/>
+                            <rect key="frame" x="537" y="223" width="33" height="13.5"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="33" id="pAH-Yh-eZN"/>
                             </constraints>
@@ -93,12 +100,16 @@
                 <constraint firstItem="qba-DC-qv3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6Aw-vm-Uyf"/>
                 <constraint firstItem="qba-DC-qv3" firstAttribute="top" secondItem="IKz-V0-yK4" secondAttribute="bottom" id="81D-fq-6Hh"/>
                 <constraint firstAttribute="bottom" secondItem="qba-DC-qv3" secondAttribute="bottom" id="8eh-Ea-lYg"/>
+                <constraint firstItem="8oC-s9-SJK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Fef-QL-w9l"/>
                 <constraint firstItem="IKz-V0-yK4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="IB0-eW-xfg"/>
                 <constraint firstAttribute="trailing" secondItem="qba-DC-qv3" secondAttribute="trailing" id="Iny-Y3-Njl"/>
                 <constraint firstItem="IKz-V0-yK4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ner-Xq-kkT"/>
+                <constraint firstItem="8oC-s9-SJK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WJA-2L-u8R"/>
+                <constraint firstItem="qba-DC-qv3" firstAttribute="top" secondItem="8oC-s9-SJK" secondAttribute="bottom" id="bgz-zS-cgj"/>
                 <constraint firstItem="qba-DC-qv3" firstAttribute="top" secondItem="IKz-V0-yK4" secondAttribute="bottom" id="iRA-NH-ijU"/>
                 <constraint firstItem="qba-DC-qv3" firstAttribute="height" secondItem="IKz-V0-yK4" secondAttribute="height" multiplier="4:6" id="jsh-ZW-LXs"/>
                 <constraint firstAttribute="trailing" secondItem="IKz-V0-yK4" secondAttribute="trailing" id="p2Z-Il-Ko1"/>
+                <constraint firstAttribute="trailing" secondItem="8oC-s9-SJK" secondAttribute="trailing" id="rqj-MJ-1jk"/>
             </constraints>
             <variation key="default">
                 <mask key="constraints">

@@ -15,14 +15,12 @@
 		EB77421C1CD8ED74007D83E9 /* BLSlidView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77421B1CD8ED74007D83E9 /* BLSlidView.m */; };
 		EB77421E1CD8ED98007D83E9 /* BLSlidView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB77421D1CD8ED98007D83E9 /* BLSlidView.xib */; };
 		EB7742231CE03937007D83E9 /* BLMainScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742221CE03937007D83E9 /* BLMainScrollView.m */; };
-		EB77422F1CE078B5007D83E9 /* BLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77422E1CE078B5007D83E9 /* BLBaseViewController.m */; };
 		EB7742321CE084D5007D83E9 /* BLCommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742311CE084D5007D83E9 /* BLCommendViewController.m */; };
 		EB7742381CE0A268007D83E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742371CE0A268007D83E9 /* AppDelegate.m */; };
 		EB77423A1CE0A27C007D83E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742391CE0A27C007D83E9 /* main.m */; };
 		EB77423E1CE0A2A3007D83E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB77423B1CE0A2A3007D83E9 /* Assets.xcassets */; };
 		EB77423F1CE0A2A3007D83E9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB77423C1CE0A2A3007D83E9 /* Info.plist */; };
 		EB7742401CE0A2A3007D83E9 /* Setting.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB77423D1CE0A2A3007D83E9 /* Setting.plist */; };
-		EB7742441CE0B739007D83E9 /* BLHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742431CE0B739007D83E9 /* BLHttpTool.m */; };
 		EB7742471CE1DAE4007D83E9 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742461CE1DAE4007D83E9 /* Foundation+Log.m */; };
 		EB7742501CE2043B007D83E9 /* BLResultItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77424F1CE2043B007D83E9 /* BLResultItem.m */; };
 		EB7742531CE2049B007D83E9 /* BLResultItemHead.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742521CE2049B007D83E9 /* BLResultItemHead.m */; };
@@ -49,24 +47,36 @@
 		EB7742A81CE22268007D83E9 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742961CE22268007D83E9 /* UIImageView+HighlightedWebCache.m */; };
 		EB7742A91CE22268007D83E9 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742981CE22268007D83E9 /* UIImageView+WebCache.m */; };
 		EB7742AA1CE22268007D83E9 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77429A1CE22268007D83E9 /* UIView+WebCacheOperation.m */; };
-		EB7742B51CE23324007D83E9 /* BLADModal.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742AE1CE23324007D83E9 /* BLADModal.m */; };
-		EB7742B71CE23324007D83E9 /* BLADCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742B31CE23324007D83E9 /* BLADCell.m */; };
-		EB7742B81CE23324007D83E9 /* BLADCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7742B41CE23324007D83E9 /* BLADCell.xib */; };
-		EB7742BB1CE29A4D007D83E9 /* BLCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742BA1CE29A4D007D83E9 /* BLCellItem.m */; };
-		EB7742BD1CE29A5C007D83E9 /* BLCellItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7742BC1CE29A5C007D83E9 /* BLCellItem.xib */; };
 		EB7742C01CE33786007D83E9 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742BF1CE33786007D83E9 /* UIView+Extension.m */; };
 		EB7742C31CE363F9007D83E9 /* BLCommendViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742C21CE363F9007D83E9 /* BLCommendViewLayout.m */; };
-		EB7742C71CE45381007D83E9 /* BLCellItem2.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742C51CE45381007D83E9 /* BLCellItem2.m */; };
-		EB7742C81CE45381007D83E9 /* BLCellItem2.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7742C61CE45381007D83E9 /* BLCellItem2.xib */; };
-		EB7742CC1CE45902007D83E9 /* BLTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742CA1CE45902007D83E9 /* BLTopicCell.m */; };
-		EB7742CD1CE45902007D83E9 /* BLTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7742CB1CE45902007D83E9 /* BLTopicCell.xib */; };
-		EB7742D11CE45D22007D83E9 /* BLScrollCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742CF1CE45D22007D83E9 /* BLScrollCell.m */; };
-		EB7742D21CE45D22007D83E9 /* BLScrollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7742D01CE45D22007D83E9 /* BLScrollCell.xib */; };
 		EB7742D81CE46A05007D83E9 /* YiRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742D51CE46A05007D83E9 /* YiRefreshFooter.m */; };
 		EB7742D91CE46A05007D83E9 /* YiRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742D71CE46A05007D83E9 /* YiRefreshHeader.m */; };
-		EB7742E81CE4C179007D83E9 /* BLBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742E71CE4C179007D83E9 /* BLBaseCell.m */; };
-		EB7742EC1CE4C196007D83E9 /* BLBaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7742EB1CE4C196007D83E9 /* BLBaseCell.xib */; };
-		EB7742F21CE4CA0F007D83E9 /* BLBaseCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742F11CE4CA0F007D83E9 /* BLBaseCellModel.m */; };
+		EB7742FD1CE5DC31007D83E9 /* BLHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7742FC1CE5DC31007D83E9 /* BLHttpTool.m */; };
+		EB7743191CE5DC4B007D83E9 /* BLADModal.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7743011CE5DC4B007D83E9 /* BLADModal.m */; };
+		EB77431A1CE5DC4B007D83E9 /* BLBaseCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7743031CE5DC4B007D83E9 /* BLBaseCellModel.m */; };
+		EB77431B1CE5DC4B007D83E9 /* BLBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7743071CE5DC4B007D83E9 /* BLBaseCell.m */; };
+		EB77431C1CE5DC4B007D83E9 /* BLBaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7743081CE5DC4B007D83E9 /* BLBaseCell.xib */; };
+		EB77431D1CE5DC4B007D83E9 /* BLADCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77430A1CE5DC4B007D83E9 /* BLADCell.m */; };
+		EB77431E1CE5DC4B007D83E9 /* BLADCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB77430B1CE5DC4B007D83E9 /* BLADCell.xib */; };
+		EB77431F1CE5DC4B007D83E9 /* BLCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77430D1CE5DC4B007D83E9 /* BLCellItem.m */; };
+		EB7743201CE5DC4B007D83E9 /* BLCellItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB77430E1CE5DC4B007D83E9 /* BLCellItem.xib */; };
+		EB7743211CE5DC4B007D83E9 /* BLCellItem2.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7743101CE5DC4B007D83E9 /* BLCellItem2.m */; };
+		EB7743221CE5DC4B007D83E9 /* BLCellItem2.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7743111CE5DC4B007D83E9 /* BLCellItem2.xib */; };
+		EB7743231CE5DC4B007D83E9 /* BLScrollCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7743131CE5DC4B007D83E9 /* BLScrollCell.m */; };
+		EB7743241CE5DC4B007D83E9 /* BLScrollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7743141CE5DC4B007D83E9 /* BLScrollCell.xib */; };
+		EB7743251CE5DC4B007D83E9 /* BLTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7743161CE5DC4B007D83E9 /* BLTopicCell.m */; };
+		EB7743261CE5DC4B007D83E9 /* BLTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7743171CE5DC4B007D83E9 /* BLTopicCell.xib */; };
+		EB7743301CE5DC87007D83E9 /* BLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77432F1CE5DC87007D83E9 /* BLBaseViewController.m */; };
+		EB7743351CE5FCEC007D83E9 /* BLOnePlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7743341CE5FCEC007D83E9 /* BLOnePlayController.m */; };
+		EB7743371CE5FD69007D83E9 /* BLOnePlayController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7743361CE5FD69007D83E9 /* BLOnePlayController.storyboard */; };
+		EB7743491CE60B47007D83E9 /* DLLRUCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77433C1CE60B47007D83E9 /* DLLRUCache.m */; };
+		EB77434A1CE60B47007D83E9 /* DLCustomSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77433E1CE60B47007D83E9 /* DLCustomSlideView.m */; };
+		EB77434B1CE60B47007D83E9 /* DLSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7743401CE60B47007D83E9 /* DLSlideView.m */; };
+		EB77434C1CE60B47007D83E9 /* DLFixedTabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7743431CE60B47007D83E9 /* DLFixedTabbarView.m */; };
+		EB77434D1CE60B47007D83E9 /* DLScrollTabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7743451CE60B47007D83E9 /* DLScrollTabbarView.m */; };
+		EB77434E1CE60B47007D83E9 /* DLTabedSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7743481CE60B47007D83E9 /* DLTabedSlideView.m */; };
+		EB7743511CE6180F007D83E9 /* BLPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7743501CE6180F007D83E9 /* BLPlayView.m */; };
+		EB7743541CE61951007D83E9 /* BLSynopsisController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7743531CE61951007D83E9 /* BLSynopsisController.m */; };
 		EBD7C2FB1CD70C7A006F2016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7C2F91CD70C7A006F2016 /* Main.storyboard */; };
 		EBD7C3001CD70C7A006F2016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7C2FE1CD70C7A006F2016 /* LaunchScreen.storyboard */; };
 		EBD7C30B1CD70C7A006F2016 /* LJKBILIBILITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7C30A1CD70C7A006F2016 /* LJKBILIBILITests.m */; };
@@ -107,8 +117,6 @@
 		EB77421D1CD8ED98007D83E9 /* BLSlidView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLSlidView.xib; sourceTree = "<group>"; };
 		EB7742211CE03937007D83E9 /* BLMainScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLMainScrollView.h; sourceTree = "<group>"; };
 		EB7742221CE03937007D83E9 /* BLMainScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLMainScrollView.m; sourceTree = "<group>"; };
-		EB77422D1CE078B5007D83E9 /* BLBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLBaseViewController.h; sourceTree = "<group>"; };
-		EB77422E1CE078B5007D83E9 /* BLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLBaseViewController.m; sourceTree = "<group>"; };
 		EB7742301CE084D5007D83E9 /* BLCommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCommendViewController.h; sourceTree = "<group>"; };
 		EB7742311CE084D5007D83E9 /* BLCommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCommendViewController.m; sourceTree = "<group>"; };
 		EB7742361CE0A268007D83E9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,8 +125,6 @@
 		EB77423B1CE0A2A3007D83E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB77423C1CE0A2A3007D83E9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB77423D1CE0A2A3007D83E9 /* Setting.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Setting.plist; sourceTree = "<group>"; };
-		EB7742421CE0B739007D83E9 /* BLHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLHttpTool.h; sourceTree = "<group>"; };
-		EB7742431CE0B739007D83E9 /* BLHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLHttpTool.m; sourceTree = "<group>"; };
 		EB7742461CE1DAE4007D83E9 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		EB77424E1CE2043B007D83E9 /* BLResultItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLResultItem.h; sourceTree = "<group>"; };
 		EB77424F1CE2043B007D83E9 /* BLResultItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLResultItem.m; sourceTree = "<group>"; };
@@ -172,36 +178,61 @@
 		EB7742981CE22268007D83E9 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		EB7742991CE22268007D83E9 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		EB77429A1CE22268007D83E9 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
-		EB7742AD1CE23324007D83E9 /* BLADModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLADModal.h; sourceTree = "<group>"; };
-		EB7742AE1CE23324007D83E9 /* BLADModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLADModal.m; sourceTree = "<group>"; };
-		EB7742B21CE23324007D83E9 /* BLADCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLADCell.h; sourceTree = "<group>"; };
-		EB7742B31CE23324007D83E9 /* BLADCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLADCell.m; sourceTree = "<group>"; };
-		EB7742B41CE23324007D83E9 /* BLADCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLADCell.xib; sourceTree = "<group>"; };
-		EB7742B91CE29A4D007D83E9 /* BLCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCellItem.h; sourceTree = "<group>"; };
-		EB7742BA1CE29A4D007D83E9 /* BLCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCellItem.m; sourceTree = "<group>"; };
-		EB7742BC1CE29A5C007D83E9 /* BLCellItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLCellItem.xib; sourceTree = "<group>"; };
 		EB7742BE1CE33786007D83E9 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		EB7742BF1CE33786007D83E9 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		EB7742C11CE363F9007D83E9 /* BLCommendViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCommendViewLayout.h; sourceTree = "<group>"; };
 		EB7742C21CE363F9007D83E9 /* BLCommendViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCommendViewLayout.m; sourceTree = "<group>"; };
-		EB7742C41CE45381007D83E9 /* BLCellItem2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCellItem2.h; sourceTree = "<group>"; };
-		EB7742C51CE45381007D83E9 /* BLCellItem2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCellItem2.m; sourceTree = "<group>"; };
-		EB7742C61CE45381007D83E9 /* BLCellItem2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLCellItem2.xib; sourceTree = "<group>"; };
-		EB7742C91CE45902007D83E9 /* BLTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTopicCell.h; sourceTree = "<group>"; };
-		EB7742CA1CE45902007D83E9 /* BLTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTopicCell.m; sourceTree = "<group>"; };
-		EB7742CB1CE45902007D83E9 /* BLTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLTopicCell.xib; sourceTree = "<group>"; };
-		EB7742CE1CE45D22007D83E9 /* BLScrollCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLScrollCell.h; sourceTree = "<group>"; };
-		EB7742CF1CE45D22007D83E9 /* BLScrollCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLScrollCell.m; sourceTree = "<group>"; };
-		EB7742D01CE45D22007D83E9 /* BLScrollCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLScrollCell.xib; sourceTree = "<group>"; };
 		EB7742D41CE46A05007D83E9 /* YiRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YiRefreshFooter.h; sourceTree = "<group>"; };
 		EB7742D51CE46A05007D83E9 /* YiRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YiRefreshFooter.m; sourceTree = "<group>"; };
 		EB7742D61CE46A05007D83E9 /* YiRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YiRefreshHeader.h; sourceTree = "<group>"; };
 		EB7742D71CE46A05007D83E9 /* YiRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YiRefreshHeader.m; sourceTree = "<group>"; };
-		EB7742E61CE4C179007D83E9 /* BLBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLBaseCell.h; sourceTree = "<group>"; };
-		EB7742E71CE4C179007D83E9 /* BLBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLBaseCell.m; sourceTree = "<group>"; };
-		EB7742EB1CE4C196007D83E9 /* BLBaseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLBaseCell.xib; sourceTree = "<group>"; };
-		EB7742F01CE4CA0F007D83E9 /* BLBaseCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLBaseCellModel.h; sourceTree = "<group>"; };
-		EB7742F11CE4CA0F007D83E9 /* BLBaseCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLBaseCellModel.m; sourceTree = "<group>"; };
+		EB7742FB1CE5DC31007D83E9 /* BLHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLHttpTool.h; sourceTree = "<group>"; };
+		EB7742FC1CE5DC31007D83E9 /* BLHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLHttpTool.m; sourceTree = "<group>"; };
+		EB7743001CE5DC4B007D83E9 /* BLADModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLADModal.h; sourceTree = "<group>"; };
+		EB7743011CE5DC4B007D83E9 /* BLADModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLADModal.m; sourceTree = "<group>"; };
+		EB7743021CE5DC4B007D83E9 /* BLBaseCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLBaseCellModel.h; sourceTree = "<group>"; };
+		EB7743031CE5DC4B007D83E9 /* BLBaseCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLBaseCellModel.m; sourceTree = "<group>"; };
+		EB7743061CE5DC4B007D83E9 /* BLBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLBaseCell.h; sourceTree = "<group>"; };
+		EB7743071CE5DC4B007D83E9 /* BLBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLBaseCell.m; sourceTree = "<group>"; };
+		EB7743081CE5DC4B007D83E9 /* BLBaseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLBaseCell.xib; sourceTree = "<group>"; };
+		EB7743091CE5DC4B007D83E9 /* BLADCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLADCell.h; sourceTree = "<group>"; };
+		EB77430A1CE5DC4B007D83E9 /* BLADCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLADCell.m; sourceTree = "<group>"; };
+		EB77430B1CE5DC4B007D83E9 /* BLADCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLADCell.xib; sourceTree = "<group>"; };
+		EB77430C1CE5DC4B007D83E9 /* BLCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCellItem.h; sourceTree = "<group>"; };
+		EB77430D1CE5DC4B007D83E9 /* BLCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCellItem.m; sourceTree = "<group>"; };
+		EB77430E1CE5DC4B007D83E9 /* BLCellItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLCellItem.xib; sourceTree = "<group>"; };
+		EB77430F1CE5DC4B007D83E9 /* BLCellItem2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCellItem2.h; sourceTree = "<group>"; };
+		EB7743101CE5DC4B007D83E9 /* BLCellItem2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCellItem2.m; sourceTree = "<group>"; };
+		EB7743111CE5DC4B007D83E9 /* BLCellItem2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLCellItem2.xib; sourceTree = "<group>"; };
+		EB7743121CE5DC4B007D83E9 /* BLScrollCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLScrollCell.h; sourceTree = "<group>"; };
+		EB7743131CE5DC4B007D83E9 /* BLScrollCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLScrollCell.m; sourceTree = "<group>"; };
+		EB7743141CE5DC4B007D83E9 /* BLScrollCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLScrollCell.xib; sourceTree = "<group>"; };
+		EB7743151CE5DC4B007D83E9 /* BLTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTopicCell.h; sourceTree = "<group>"; };
+		EB7743161CE5DC4B007D83E9 /* BLTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTopicCell.m; sourceTree = "<group>"; };
+		EB7743171CE5DC4B007D83E9 /* BLTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLTopicCell.xib; sourceTree = "<group>"; };
+		EB77432E1CE5DC87007D83E9 /* BLBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLBaseViewController.h; sourceTree = "<group>"; };
+		EB77432F1CE5DC87007D83E9 /* BLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLBaseViewController.m; sourceTree = "<group>"; };
+		EB7743331CE5FCEC007D83E9 /* BLOnePlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLOnePlayController.h; sourceTree = "<group>"; };
+		EB7743341CE5FCEC007D83E9 /* BLOnePlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLOnePlayController.m; sourceTree = "<group>"; };
+		EB7743361CE5FD69007D83E9 /* BLOnePlayController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BLOnePlayController.storyboard; sourceTree = "<group>"; };
+		EB77433A1CE60B47007D83E9 /* DLCacheProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLCacheProtocol.h; sourceTree = "<group>"; };
+		EB77433B1CE60B47007D83E9 /* DLLRUCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLLRUCache.h; sourceTree = "<group>"; };
+		EB77433C1CE60B47007D83E9 /* DLLRUCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLLRUCache.m; sourceTree = "<group>"; };
+		EB77433D1CE60B47007D83E9 /* DLCustomSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLCustomSlideView.h; sourceTree = "<group>"; };
+		EB77433E1CE60B47007D83E9 /* DLCustomSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLCustomSlideView.m; sourceTree = "<group>"; };
+		EB77433F1CE60B47007D83E9 /* DLSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSlideView.h; sourceTree = "<group>"; };
+		EB7743401CE60B47007D83E9 /* DLSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSlideView.m; sourceTree = "<group>"; };
+		EB7743421CE60B47007D83E9 /* DLFixedTabbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLFixedTabbarView.h; sourceTree = "<group>"; };
+		EB7743431CE60B47007D83E9 /* DLFixedTabbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLFixedTabbarView.m; sourceTree = "<group>"; };
+		EB7743441CE60B47007D83E9 /* DLScrollTabbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLScrollTabbarView.h; sourceTree = "<group>"; };
+		EB7743451CE60B47007D83E9 /* DLScrollTabbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLScrollTabbarView.m; sourceTree = "<group>"; };
+		EB7743461CE60B47007D83E9 /* DLSlideTabbarProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSlideTabbarProtocol.h; sourceTree = "<group>"; };
+		EB7743471CE60B47007D83E9 /* DLTabedSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLTabedSlideView.h; sourceTree = "<group>"; };
+		EB7743481CE60B47007D83E9 /* DLTabedSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLTabedSlideView.m; sourceTree = "<group>"; };
+		EB77434F1CE6180F007D83E9 /* BLPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLPlayView.h; sourceTree = "<group>"; };
+		EB7743501CE6180F007D83E9 /* BLPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLPlayView.m; sourceTree = "<group>"; };
+		EB7743521CE61951007D83E9 /* BLSynopsisController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLSynopsisController.h; sourceTree = "<group>"; };
+		EB7743531CE61951007D83E9 /* BLSynopsisController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLSynopsisController.m; sourceTree = "<group>"; };
 		EBD7C2ED1CD70C7A006F2016 /* LJKBILIBILI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJKBILIBILI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD7C2FA1CD70C7A006F2016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBD7C2FF1CD70C7A006F2016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -259,12 +290,12 @@
 		EB7742021CD8B5C8007D83E9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				EB7742281CE07837007D83E9 /* Base */,
-				EB7742411CE0B6D1007D83E9 /* Tool */,
-				EB7742AB1CE23324007D83E9 /* Cell */,
+				EB7743311CE5FB42007D83E9 /* OnePlay */,
+				EB7742FE1CE5DC4B007D83E9 /* Communal */,
+				EB7742FA1CE5DC31007D83E9 /* Tool */,
 				EB7742031CD8B618007D83E9 /* Main */,
 				EB7742241CE07585007D83E9 /* Commend(推荐) */,
-				EB7742181CD8EC54007D83E9 /* Slid */,
+				EB7742181CD8EC54007D83E9 /* Slid(左滑动菜单) */,
 				EB7742111CD8CA41007D83E9 /* Other */,
 				EB7742351CE0A22D007D83E9 /* Launch */,
 				EB7742331CE0A1EE007D83E9 /* Source */,
@@ -286,6 +317,7 @@
 		EB7742041CD8B636007D83E9 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				EB7743381CE60B47007D83E9 /* DLSlideView */,
 				EB7742D31CE46A05007D83E9 /* YiRefresh */,
 				EB7742791CE22268007D83E9 /* SDWebImage */,
 				EB7742551CE206B7007D83E9 /* MJExtension */,
@@ -328,11 +360,12 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
-		EB7742181CD8EC54007D83E9 /* Slid */ = {
+		EB7742181CD8EC54007D83E9 /* Slid(左滑动菜单) */ = {
 			isa = PBXGroup;
 			children = (
 				EB7742191CD8EC86007D83E9 /* Controller */,
 			);
+			name = "Slid(左滑动菜单)";
 			path = Slid;
 			sourceTree = "<group>";
 		};
@@ -386,39 +419,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		EB7742281CE07837007D83E9 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				EB77422C1CE07883007D83E9 /* Model */,
-				EB77422B1CE07875007D83E9 /* View */,
-				EB77422A1CE07862007D83E9 /* Controller */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		EB77422A1CE07862007D83E9 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				EB77422D1CE078B5007D83E9 /* BLBaseViewController.h */,
-				EB77422E1CE078B5007D83E9 /* BLBaseViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		EB77422B1CE07875007D83E9 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		EB77422C1CE07883007D83E9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		EB7742331CE0A1EE007D83E9 /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -435,15 +435,6 @@
 				EBD7C2FE1CD70C7A006F2016 /* LaunchScreen.storyboard */,
 			);
 			path = Launch;
-			sourceTree = "<group>";
-		};
-		EB7742411CE0B6D1007D83E9 /* Tool */ = {
-			isa = PBXGroup;
-			children = (
-				EB7742421CE0B739007D83E9 /* BLHttpTool.h */,
-				EB7742431CE0B739007D83E9 /* BLHttpTool.m */,
-			);
-			path = Tool;
 			sourceTree = "<group>";
 		};
 		EB7742451CE1DAB5007D83E9 /* Categories */ = {
@@ -518,49 +509,6 @@
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
-		EB7742AB1CE23324007D83E9 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				EB7742AC1CE23324007D83E9 /* Model */,
-				EB7742B11CE23324007D83E9 /* View */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		EB7742AC1CE23324007D83E9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				EB7742AD1CE23324007D83E9 /* BLADModal.h */,
-				EB7742AE1CE23324007D83E9 /* BLADModal.m */,
-				EB7742F01CE4CA0F007D83E9 /* BLBaseCellModel.h */,
-				EB7742F11CE4CA0F007D83E9 /* BLBaseCellModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		EB7742B11CE23324007D83E9 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				EB7742E51CE4BFF3007D83E9 /* BaseCellView */,
-				EB7742B21CE23324007D83E9 /* BLADCell.h */,
-				EB7742B31CE23324007D83E9 /* BLADCell.m */,
-				EB7742B41CE23324007D83E9 /* BLADCell.xib */,
-				EB7742B91CE29A4D007D83E9 /* BLCellItem.h */,
-				EB7742BA1CE29A4D007D83E9 /* BLCellItem.m */,
-				EB7742BC1CE29A5C007D83E9 /* BLCellItem.xib */,
-				EB7742C41CE45381007D83E9 /* BLCellItem2.h */,
-				EB7742C51CE45381007D83E9 /* BLCellItem2.m */,
-				EB7742C61CE45381007D83E9 /* BLCellItem2.xib */,
-				EB7742C91CE45902007D83E9 /* BLTopicCell.h */,
-				EB7742CA1CE45902007D83E9 /* BLTopicCell.m */,
-				EB7742CB1CE45902007D83E9 /* BLTopicCell.xib */,
-				EB7742CE1CE45D22007D83E9 /* BLScrollCell.h */,
-				EB7742CF1CE45D22007D83E9 /* BLScrollCell.m */,
-				EB7742D01CE45D22007D83E9 /* BLScrollCell.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		EB7742D31CE46A05007D83E9 /* YiRefresh */ = {
 			isa = PBXGroup;
 			children = (
@@ -572,14 +520,143 @@
 			path = YiRefresh;
 			sourceTree = "<group>";
 		};
-		EB7742E51CE4BFF3007D83E9 /* BaseCellView */ = {
+		EB7742FA1CE5DC31007D83E9 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				EB7742E61CE4C179007D83E9 /* BLBaseCell.h */,
-				EB7742E71CE4C179007D83E9 /* BLBaseCell.m */,
-				EB7742EB1CE4C196007D83E9 /* BLBaseCell.xib */,
+				EB7742FB1CE5DC31007D83E9 /* BLHttpTool.h */,
+				EB7742FC1CE5DC31007D83E9 /* BLHttpTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		EB7742FE1CE5DC4B007D83E9 /* Communal */ = {
+			isa = PBXGroup;
+			children = (
+				EB77432D1CE5DC87007D83E9 /* Controller */,
+				EB7742FF1CE5DC4B007D83E9 /* Model */,
+				EB7743041CE5DC4B007D83E9 /* View */,
+			);
+			path = Communal;
+			sourceTree = "<group>";
+		};
+		EB7742FF1CE5DC4B007D83E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB7743001CE5DC4B007D83E9 /* BLADModal.h */,
+				EB7743011CE5DC4B007D83E9 /* BLADModal.m */,
+				EB7743021CE5DC4B007D83E9 /* BLBaseCellModel.h */,
+				EB7743031CE5DC4B007D83E9 /* BLBaseCellModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB7743041CE5DC4B007D83E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB7743051CE5DC4B007D83E9 /* BaseCellView */,
+				EB7743091CE5DC4B007D83E9 /* BLADCell.h */,
+				EB77430A1CE5DC4B007D83E9 /* BLADCell.m */,
+				EB77430B1CE5DC4B007D83E9 /* BLADCell.xib */,
+				EB77430C1CE5DC4B007D83E9 /* BLCellItem.h */,
+				EB77430D1CE5DC4B007D83E9 /* BLCellItem.m */,
+				EB77430E1CE5DC4B007D83E9 /* BLCellItem.xib */,
+				EB77430F1CE5DC4B007D83E9 /* BLCellItem2.h */,
+				EB7743101CE5DC4B007D83E9 /* BLCellItem2.m */,
+				EB7743111CE5DC4B007D83E9 /* BLCellItem2.xib */,
+				EB7743121CE5DC4B007D83E9 /* BLScrollCell.h */,
+				EB7743131CE5DC4B007D83E9 /* BLScrollCell.m */,
+				EB7743141CE5DC4B007D83E9 /* BLScrollCell.xib */,
+				EB7743151CE5DC4B007D83E9 /* BLTopicCell.h */,
+				EB7743161CE5DC4B007D83E9 /* BLTopicCell.m */,
+				EB7743171CE5DC4B007D83E9 /* BLTopicCell.xib */,
+				EB7743181CE5DC4B007D83E9 /* smallestCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB7743051CE5DC4B007D83E9 /* BaseCellView */ = {
+			isa = PBXGroup;
+			children = (
+				EB7743061CE5DC4B007D83E9 /* BLBaseCell.h */,
+				EB7743071CE5DC4B007D83E9 /* BLBaseCell.m */,
+				EB7743081CE5DC4B007D83E9 /* BLBaseCell.xib */,
 			);
 			path = BaseCellView;
+			sourceTree = "<group>";
+		};
+		EB7743181CE5DC4B007D83E9 /* smallestCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = smallestCell;
+			sourceTree = "<group>";
+		};
+		EB77432D1CE5DC87007D83E9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB77432E1CE5DC87007D83E9 /* BLBaseViewController.h */,
+				EB77432F1CE5DC87007D83E9 /* BLBaseViewController.m */,
+				EB77434F1CE6180F007D83E9 /* BLPlayView.h */,
+				EB7743501CE6180F007D83E9 /* BLPlayView.m */,
+				EB7743521CE61951007D83E9 /* BLSynopsisController.h */,
+				EB7743531CE61951007D83E9 /* BLSynopsisController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB7743311CE5FB42007D83E9 /* OnePlay */ = {
+			isa = PBXGroup;
+			children = (
+				EB7743321CE5FCC3007D83E9 /* Controller */,
+			);
+			path = OnePlay;
+			sourceTree = "<group>";
+		};
+		EB7743321CE5FCC3007D83E9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB7743331CE5FCEC007D83E9 /* BLOnePlayController.h */,
+				EB7743341CE5FCEC007D83E9 /* BLOnePlayController.m */,
+				EB7743361CE5FD69007D83E9 /* BLOnePlayController.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB7743381CE60B47007D83E9 /* DLSlideView */ = {
+			isa = PBXGroup;
+			children = (
+				EB7743391CE60B47007D83E9 /* DLCache */,
+				EB77433D1CE60B47007D83E9 /* DLCustomSlideView.h */,
+				EB77433E1CE60B47007D83E9 /* DLCustomSlideView.m */,
+				EB77433F1CE60B47007D83E9 /* DLSlideView.h */,
+				EB7743401CE60B47007D83E9 /* DLSlideView.m */,
+				EB7743411CE60B47007D83E9 /* DLTabbarView */,
+				EB7743471CE60B47007D83E9 /* DLTabedSlideView.h */,
+				EB7743481CE60B47007D83E9 /* DLTabedSlideView.m */,
+			);
+			path = DLSlideView;
+			sourceTree = "<group>";
+		};
+		EB7743391CE60B47007D83E9 /* DLCache */ = {
+			isa = PBXGroup;
+			children = (
+				EB77433A1CE60B47007D83E9 /* DLCacheProtocol.h */,
+				EB77433B1CE60B47007D83E9 /* DLLRUCache.h */,
+				EB77433C1CE60B47007D83E9 /* DLLRUCache.m */,
+			);
+			path = DLCache;
+			sourceTree = "<group>";
+		};
+		EB7743411CE60B47007D83E9 /* DLTabbarView */ = {
+			isa = PBXGroup;
+			children = (
+				EB7743421CE60B47007D83E9 /* DLFixedTabbarView.h */,
+				EB7743431CE60B47007D83E9 /* DLFixedTabbarView.m */,
+				EB7743441CE60B47007D83E9 /* DLScrollTabbarView.h */,
+				EB7743451CE60B47007D83E9 /* DLScrollTabbarView.m */,
+				EB7743461CE60B47007D83E9 /* DLSlideTabbarProtocol.h */,
+			);
+			path = DLTabbarView;
 			sourceTree = "<group>";
 		};
 		EBD7C2E41CD70C7A006F2016 = {
@@ -745,16 +822,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB7742D21CE45D22007D83E9 /* BLScrollCell.xib in Resources */,
-				EB7742B81CE23324007D83E9 /* BLADCell.xib in Resources */,
-				EB7742CD1CE45902007D83E9 /* BLTopicCell.xib in Resources */,
+				EB7743201CE5DC4B007D83E9 /* BLCellItem.xib in Resources */,
+				EB7743261CE5DC4B007D83E9 /* BLTopicCell.xib in Resources */,
+				EB77431E1CE5DC4B007D83E9 /* BLADCell.xib in Resources */,
+				EB7743241CE5DC4B007D83E9 /* BLScrollCell.xib in Resources */,
+				EB7743221CE5DC4B007D83E9 /* BLCellItem2.xib in Resources */,
+				EB77431C1CE5DC4B007D83E9 /* BLBaseCell.xib in Resources */,
 				EB77421E1CD8ED98007D83E9 /* BLSlidView.xib in Resources */,
 				EBD7C3001CD70C7A006F2016 /* LaunchScreen.storyboard in Resources */,
 				EB77423E1CE0A2A3007D83E9 /* Assets.xcassets in Resources */,
-				EB7742C81CE45381007D83E9 /* BLCellItem2.xib in Resources */,
-				EB7742BD1CE29A5C007D83E9 /* BLCellItem.xib in Resources */,
-				EB7742EC1CE4C196007D83E9 /* BLBaseCell.xib in Resources */,
 				EB77423F1CE0A2A3007D83E9 /* Info.plist in Resources */,
+				EB7743371CE5FD69007D83E9 /* BLOnePlayController.storyboard in Resources */,
 				EBD7C2FB1CD70C7A006F2016 /* Main.storyboard in Resources */,
 				EB7742401CE0A2A3007D83E9 /* Setting.plist in Resources */,
 			);
@@ -830,54 +908,63 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB7742381CE0A268007D83E9 /* AppDelegate.m in Sources */,
+				EB7743541CE61951007D83E9 /* BLSynopsisController.m in Sources */,
+				EB7743301CE5DC87007D83E9 /* BLBaseViewController.m in Sources */,
+				EB7743351CE5FCEC007D83E9 /* BLOnePlayController.m in Sources */,
+				EB77434C1CE60B47007D83E9 /* DLFixedTabbarView.m in Sources */,
 				EB7742A41CE22268007D83E9 /* UIButton+WebCache.m in Sources */,
+				EB77431A1CE5DC4B007D83E9 /* BLBaseCellModel.m in Sources */,
+				EB77434A1CE60B47007D83E9 /* DLCustomSlideView.m in Sources */,
 				EB7742A21CE22268007D83E9 /* SDWebImageManager.m in Sources */,
-				EB7742B71CE23324007D83E9 /* BLADCell.m in Sources */,
 				EB7742321CE084D5007D83E9 /* BLCommendViewController.m in Sources */,
-				EB7742BB1CE29A4D007D83E9 /* BLCellItem.m in Sources */,
-				EB7742441CE0B739007D83E9 /* BLHttpTool.m in Sources */,
-				EB7742C71CE45381007D83E9 /* BLCellItem2.m in Sources */,
-				EB77422F1CE078B5007D83E9 /* BLBaseViewController.m in Sources */,
 				EB7742A01CE22268007D83E9 /* SDWebImageDownloader.m in Sources */,
 				EB7742651CE206B7007D83E9 /* MJConst.m in Sources */,
-				EB7742D11CE45D22007D83E9 /* BLScrollCell.m in Sources */,
+				EB77431D1CE5DC4B007D83E9 /* BLADCell.m in Sources */,
 				EB77429E1CE22268007D83E9 /* SDWebImageCompat.m in Sources */,
 				EB7742171CD8CEE3007D83E9 /* BLTopView.m in Sources */,
 				EB77420B1CD8B702007D83E9 /* BLHomeViewController.m in Sources */,
 				EB7742661CE206B7007D83E9 /* MJFoundation.m in Sources */,
+				EB7743491CE60B47007D83E9 /* DLLRUCache.m in Sources */,
+				EB77434E1CE60B47007D83E9 /* DLTabedSlideView.m in Sources */,
+				EB77431B1CE5DC4B007D83E9 /* BLBaseCell.m in Sources */,
+				EB7742FD1CE5DC31007D83E9 /* BLHttpTool.m in Sources */,
 				EB7742C31CE363F9007D83E9 /* BLCommendViewLayout.m in Sources */,
 				EB7742D81CE46A05007D83E9 /* YiRefreshFooter.m in Sources */,
 				EB7742AA1CE22268007D83E9 /* UIView+WebCacheOperation.m in Sources */,
-				EB7742F21CE4CA0F007D83E9 /* BLBaseCellModel.m in Sources */,
 				EB77426A1CE206B7007D83E9 /* NSObject+MJIvar.m in Sources */,
 				EB7742A91CE22268007D83E9 /* UIImageView+WebCache.m in Sources */,
+				EB7743231CE5DC4B007D83E9 /* BLScrollCell.m in Sources */,
+				EB77434D1CE60B47007D83E9 /* DLScrollTabbarView.m in Sources */,
 				EB7742D91CE46A05007D83E9 /* YiRefreshHeader.m in Sources */,
 				EB7742A71CE22268007D83E9 /* UIImage+WebP.m in Sources */,
 				EB77429D1CE22268007D83E9 /* SDImageCache.m in Sources */,
+				EB7743211CE5DC4B007D83E9 /* BLCellItem2.m in Sources */,
 				EB7742501CE2043B007D83E9 /* BLResultItem.m in Sources */,
 				EB7742A61CE22268007D83E9 /* UIImage+MultiFormat.m in Sources */,
 				EB7742A11CE22268007D83E9 /* SDWebImageDownloaderOperation.m in Sources */,
 				EB77426B1CE206B7007D83E9 /* NSObject+MJKeyValue.m in Sources */,
+				EB7743251CE5DC4B007D83E9 /* BLTopicCell.m in Sources */,
 				EB7742C01CE33786007D83E9 /* UIView+Extension.m in Sources */,
 				EB7742A81CE22268007D83E9 /* UIImageView+HighlightedWebCache.m in Sources */,
 				EB7742081CD8B6D6007D83E9 /* BLNavigationController.m in Sources */,
+				EB7743511CE6180F007D83E9 /* BLPlayView.m in Sources */,
 				EB7742681CE206B7007D83E9 /* MJType.m in Sources */,
 				EB77429C1CE22268007D83E9 /* NSData+ImageContentType.m in Sources */,
 				EB7742671CE206B7007D83E9 /* MJIvar.m in Sources */,
 				EB77421C1CD8ED74007D83E9 /* BLSlidView.m in Sources */,
 				EB7742531CE2049B007D83E9 /* BLResultItemHead.m in Sources */,
-				EB7742CC1CE45902007D83E9 /* BLTopicCell.m in Sources */,
+				EB7743191CE5DC4B007D83E9 /* BLADModal.m in Sources */,
+				EB77434B1CE60B47007D83E9 /* DLSlideView.m in Sources */,
 				EB77429F1CE22268007D83E9 /* SDWebImageDecoder.m in Sources */,
 				EB7742141CD8CAC8007D83E9 /* BLConst.m in Sources */,
+				EB77431F1CE5DC4B007D83E9 /* BLCellItem.m in Sources */,
 				EB7742691CE206B7007D83E9 /* NSObject+MJCoding.m in Sources */,
 				EB7742231CE03937007D83E9 /* BLMainScrollView.m in Sources */,
 				EB77423A1CE0A27C007D83E9 /* main.m in Sources */,
 				EB7742A31CE22268007D83E9 /* SDWebImagePrefetcher.m in Sources */,
 				EB77429B1CE22268007D83E9 /* MKAnnotationView+WebCache.m in Sources */,
 				EB7742A51CE22268007D83E9 /* UIImage+GIF.m in Sources */,
-				EB7742B51CE23324007D83E9 /* BLADModal.m in Sources */,
 				EB7742471CE1DAE4007D83E9 /* Foundation+Log.m in Sources */,
-				EB7742E81CE4C179007D83E9 /* BLBaseCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

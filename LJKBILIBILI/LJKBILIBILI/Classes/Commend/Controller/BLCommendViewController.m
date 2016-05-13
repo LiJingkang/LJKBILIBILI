@@ -265,6 +265,11 @@
 //
 //}
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"%ld",indexPath.row);
+}
+
 
 
 
