@@ -68,7 +68,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Tu-XS-S8p" userLabel="item3">
-                        <rect key="frame" x="5" y="222.5" width="321" height="182.5"/>
+                        <rect key="frame" x="5" y="222" width="321" height="182.5"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V08-Nk-jLX" userLabel="imte4">

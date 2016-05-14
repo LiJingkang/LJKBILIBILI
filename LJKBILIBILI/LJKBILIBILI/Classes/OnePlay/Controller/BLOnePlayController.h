@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BLBaseCellModel.h"
 
 @interface BLOnePlayController : UIViewController
+
+@property (nonatomic, strong) BLBaseCellModel *baseCellModel;
 
 
 + (BLOnePlayController *)onePlayController;

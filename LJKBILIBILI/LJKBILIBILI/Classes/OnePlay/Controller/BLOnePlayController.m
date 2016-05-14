@@ -9,10 +9,20 @@
 #import "BLOnePlayController.h"
 #import "BLConst.h"
 #import "DLTabedSlideView.h"
+#import "BLCommendModel.h"
+#import "BLDataTool.h"
+#import "MJExtension.h"
+#import "BLCommendCellModel.h"
 
 @interface BLOnePlayController () <UIScrollViewDelegate,DLTabedSlideViewDelegate>
-// 位于其他几个View的下面
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
+/**
+ *  存放的是CommendModel模型
+ */
+@property (nonatomic, strong) BLCommendModel *commendModel;
+
+
+
 
 @end
 
@@ -21,12 +31,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.scrollView.alwaysBounceVertical = YES;
-    self.scrollView.bounces = YES;
-    self.scrollView.contentSize = CGSizeMake(1000, 1000);
-    self.scrollView.delegate = self;
+    [self getCommentData];
 
-    self.scrollView.showsVerticalScrollIndicator = YES;
+    [self setChlidViewController];
+
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - 私有方法
+/**
+ *   设置下部的子控制器
+ */
+- (void)setChlidViewController{
+
     DLTabedSlideView *slideView = [[DLTabedSlideView alloc] init]; // 初始化导航栏干
     slideView.backgroundColor = [UIColor redColor];
     // 这个范围包括子控制器的范围 在代理方法中返回的控制器会自动填充到剩余的部分
@@ -39,19 +60,36 @@
     slideView.tabItemNormalColor = [UIColor redColor];
     slideView.tabItemSelectedColor = BLColor(239, 239, 239);
     slideView.tabbarBottomSpacing = 3.0; // tabBar间距
-//    self.tabedSlideView.tabbarBackgroundImage = [UIImage imageNamed:@"tabbarBk"]; // 背景图片
-//    self.tabedSlideView.tabbarTrackColor = [UIColor colorWithRed:0.833 green:0.052 blue:0.130 alpha:1.000];
+    //    self.tabedSlideView.tabbarBackgroundImage = [UIImage imageNamed:@"tabbarBk"]; // 背景图片
+    //    self.tabedSlideView.tabbarTrackColor = [UIColor colorWithRed:0.833 green:0.052 blue:0.130 alpha:1.000];
     DLTabedbarItem *item1 = [DLTabedbarItem itemWithTitle:@"简介" image:nil selectedImage:nil];
     DLTabedbarItem *item2 = [DLTabedbarItem itemWithTitle:@"评论" image:nil selectedImage:nil];
 
     slideView.tabbarItems = @[item1, item2];
     [slideView buildTabbar];
     slideView.selectedIndex = 0;
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)getCommentData
+{
+    __weak typeof(self) weakSelf = self;
+    [BLDataTool GETCommentData:self.baseCellModel
+                       success:^(id blCommendModel) {
+                           weakSelf.commendModel = blCommendModel;
+
+                           NSArray *hotsArray =  weakSelf.commendModel.hots;
+
+                           for (BLCommendCellModel *commendCellModel in hotsArray) {
+                               NSLog(@"%@",commendCellModel.content.message);
+                           }
+                           
+                       }
+                       failure:^(NSError *error) {
+                           NSLog(@"%@",error);
+                       }];
+
+
 }
 
 

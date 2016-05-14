@@ -77,6 +77,12 @@
 		EB77434E1CE60B47007D83E9 /* DLTabedSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7743481CE60B47007D83E9 /* DLTabedSlideView.m */; };
 		EB7743511CE6180F007D83E9 /* BLPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7743501CE6180F007D83E9 /* BLPlayView.m */; };
 		EB7743541CE61951007D83E9 /* BLSynopsisController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7743531CE61951007D83E9 /* BLSynopsisController.m */; };
+		EB7743571CE71376007D83E9 /* BLCommendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7743561CE71376007D83E9 /* BLCommendModel.m */; };
+		EB77435A1CE71545007D83E9 /* BLPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7743591CE71545007D83E9 /* BLPageModel.m */; };
+		EB77435D1CE71753007D83E9 /* BLCommendCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77435C1CE71753007D83E9 /* BLCommendCellModel.m */; };
+		EB7743601CE7182A007D83E9 /* BLMemberModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77435F1CE7182A007D83E9 /* BLMemberModel.m */; };
+		EB7743631CE71845007D83E9 /* BLContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7743621CE71845007D83E9 /* BLContentModel.m */; };
+		EB7743671CE71A69007D83E9 /* BLDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7743661CE71A69007D83E9 /* BLDataTool.m */; };
 		EBD7C2FB1CD70C7A006F2016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7C2F91CD70C7A006F2016 /* Main.storyboard */; };
 		EBD7C3001CD70C7A006F2016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7C2FE1CD70C7A006F2016 /* LaunchScreen.storyboard */; };
 		EBD7C30B1CD70C7A006F2016 /* LJKBILIBILITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7C30A1CD70C7A006F2016 /* LJKBILIBILITests.m */; };
@@ -233,6 +239,18 @@
 		EB7743501CE6180F007D83E9 /* BLPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLPlayView.m; sourceTree = "<group>"; };
 		EB7743521CE61951007D83E9 /* BLSynopsisController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLSynopsisController.h; sourceTree = "<group>"; };
 		EB7743531CE61951007D83E9 /* BLSynopsisController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLSynopsisController.m; sourceTree = "<group>"; };
+		EB7743551CE71376007D83E9 /* BLCommendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCommendModel.h; sourceTree = "<group>"; };
+		EB7743561CE71376007D83E9 /* BLCommendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCommendModel.m; sourceTree = "<group>"; };
+		EB7743581CE71545007D83E9 /* BLPageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLPageModel.h; sourceTree = "<group>"; };
+		EB7743591CE71545007D83E9 /* BLPageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLPageModel.m; sourceTree = "<group>"; };
+		EB77435B1CE71753007D83E9 /* BLCommendCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCommendCellModel.h; sourceTree = "<group>"; };
+		EB77435C1CE71753007D83E9 /* BLCommendCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCommendCellModel.m; sourceTree = "<group>"; };
+		EB77435E1CE7182A007D83E9 /* BLMemberModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLMemberModel.h; sourceTree = "<group>"; };
+		EB77435F1CE7182A007D83E9 /* BLMemberModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLMemberModel.m; sourceTree = "<group>"; };
+		EB7743611CE71845007D83E9 /* BLContentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLContentModel.h; sourceTree = "<group>"; };
+		EB7743621CE71845007D83E9 /* BLContentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLContentModel.m; sourceTree = "<group>"; };
+		EB7743651CE71A69007D83E9 /* BLDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLDataTool.h; sourceTree = "<group>"; };
+		EB7743661CE71A69007D83E9 /* BLDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLDataTool.m; sourceTree = "<group>"; };
 		EBD7C2ED1CD70C7A006F2016 /* LJKBILIBILI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJKBILIBILI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD7C2FA1CD70C7A006F2016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBD7C2FF1CD70C7A006F2016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -525,6 +543,8 @@
 			children = (
 				EB7742FB1CE5DC31007D83E9 /* BLHttpTool.h */,
 				EB7742FC1CE5DC31007D83E9 /* BLHttpTool.m */,
+				EB7743651CE71A69007D83E9 /* BLDataTool.h */,
+				EB7743661CE71A69007D83E9 /* BLDataTool.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -546,6 +566,16 @@
 				EB7743011CE5DC4B007D83E9 /* BLADModal.m */,
 				EB7743021CE5DC4B007D83E9 /* BLBaseCellModel.h */,
 				EB7743031CE5DC4B007D83E9 /* BLBaseCellModel.m */,
+				EB7743551CE71376007D83E9 /* BLCommendModel.h */,
+				EB7743561CE71376007D83E9 /* BLCommendModel.m */,
+				EB7743581CE71545007D83E9 /* BLPageModel.h */,
+				EB7743591CE71545007D83E9 /* BLPageModel.m */,
+				EB77435B1CE71753007D83E9 /* BLCommendCellModel.h */,
+				EB77435C1CE71753007D83E9 /* BLCommendCellModel.m */,
+				EB77435E1CE7182A007D83E9 /* BLMemberModel.h */,
+				EB77435F1CE7182A007D83E9 /* BLMemberModel.m */,
+				EB7743611CE71845007D83E9 /* BLContentModel.h */,
+				EB7743621CE71845007D83E9 /* BLContentModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -915,17 +945,21 @@
 				EB7742A41CE22268007D83E9 /* UIButton+WebCache.m in Sources */,
 				EB77431A1CE5DC4B007D83E9 /* BLBaseCellModel.m in Sources */,
 				EB77434A1CE60B47007D83E9 /* DLCustomSlideView.m in Sources */,
+				EB77435A1CE71545007D83E9 /* BLPageModel.m in Sources */,
 				EB7742A21CE22268007D83E9 /* SDWebImageManager.m in Sources */,
 				EB7742321CE084D5007D83E9 /* BLCommendViewController.m in Sources */,
 				EB7742A01CE22268007D83E9 /* SDWebImageDownloader.m in Sources */,
 				EB7742651CE206B7007D83E9 /* MJConst.m in Sources */,
+				EB7743671CE71A69007D83E9 /* BLDataTool.m in Sources */,
 				EB77431D1CE5DC4B007D83E9 /* BLADCell.m in Sources */,
 				EB77429E1CE22268007D83E9 /* SDWebImageCompat.m in Sources */,
+				EB7743601CE7182A007D83E9 /* BLMemberModel.m in Sources */,
 				EB7742171CD8CEE3007D83E9 /* BLTopView.m in Sources */,
 				EB77420B1CD8B702007D83E9 /* BLHomeViewController.m in Sources */,
 				EB7742661CE206B7007D83E9 /* MJFoundation.m in Sources */,
 				EB7743491CE60B47007D83E9 /* DLLRUCache.m in Sources */,
 				EB77434E1CE60B47007D83E9 /* DLTabedSlideView.m in Sources */,
+				EB7743631CE71845007D83E9 /* BLContentModel.m in Sources */,
 				EB77431B1CE5DC4B007D83E9 /* BLBaseCell.m in Sources */,
 				EB7742FD1CE5DC31007D83E9 /* BLHttpTool.m in Sources */,
 				EB7742C31CE363F9007D83E9 /* BLCommendViewLayout.m in Sources */,
@@ -941,6 +975,7 @@
 				EB7743211CE5DC4B007D83E9 /* BLCellItem2.m in Sources */,
 				EB7742501CE2043B007D83E9 /* BLResultItem.m in Sources */,
 				EB7742A61CE22268007D83E9 /* UIImage+MultiFormat.m in Sources */,
+				EB77435D1CE71753007D83E9 /* BLCommendCellModel.m in Sources */,
 				EB7742A11CE22268007D83E9 /* SDWebImageDownloaderOperation.m in Sources */,
 				EB77426B1CE206B7007D83E9 /* NSObject+MJKeyValue.m in Sources */,
 				EB7743251CE5DC4B007D83E9 /* BLTopicCell.m in Sources */,
@@ -960,6 +995,7 @@
 				EB77431F1CE5DC4B007D83E9 /* BLCellItem.m in Sources */,
 				EB7742691CE206B7007D83E9 /* NSObject+MJCoding.m in Sources */,
 				EB7742231CE03937007D83E9 /* BLMainScrollView.m in Sources */,
+				EB7743571CE71376007D83E9 /* BLCommendModel.m in Sources */,
 				EB77423A1CE0A27C007D83E9 /* main.m in Sources */,
 				EB7742A31CE22268007D83E9 /* SDWebImagePrefetcher.m in Sources */,
 				EB77429B1CE22268007D83E9 /* MKAnnotationView+WebCache.m in Sources */,

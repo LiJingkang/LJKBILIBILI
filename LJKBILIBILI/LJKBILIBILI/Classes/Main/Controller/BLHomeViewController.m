@@ -164,6 +164,7 @@
 - (void)baseCellDidClick:(NSNotification *)notification
 {
     BLOnePlayController *onePlay = [BLOnePlayController onePlayController];
+    onePlay.baseCellModel = notification.object; // 传递模型
 
     [self.navigationController pushViewController:onePlay animated:YES];
 
