@@ -83,6 +83,8 @@
 		EB7743601CE7182A007D83E9 /* BLMemberModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77435F1CE7182A007D83E9 /* BLMemberModel.m */; };
 		EB7743631CE71845007D83E9 /* BLContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7743621CE71845007D83E9 /* BLContentModel.m */; };
 		EB7743671CE71A69007D83E9 /* BLDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7743661CE71A69007D83E9 /* BLDataTool.m */; };
+		EB7743691CE73DD0007D83E9 /* BLSynopsisController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7743681CE73DD0007D83E9 /* BLSynopsisController.xib */; };
+		EB77436C1CE9C964007D83E9 /* BLCommentController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77436B1CE9C964007D83E9 /* BLCommentController.m */; };
 		EBD7C2FB1CD70C7A006F2016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7C2F91CD70C7A006F2016 /* Main.storyboard */; };
 		EBD7C3001CD70C7A006F2016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7C2FE1CD70C7A006F2016 /* LaunchScreen.storyboard */; };
 		EBD7C30B1CD70C7A006F2016 /* LJKBILIBILITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7C30A1CD70C7A006F2016 /* LJKBILIBILITests.m */; };
@@ -251,6 +253,9 @@
 		EB7743621CE71845007D83E9 /* BLContentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLContentModel.m; sourceTree = "<group>"; };
 		EB7743651CE71A69007D83E9 /* BLDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLDataTool.h; sourceTree = "<group>"; };
 		EB7743661CE71A69007D83E9 /* BLDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLDataTool.m; sourceTree = "<group>"; };
+		EB7743681CE73DD0007D83E9 /* BLSynopsisController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLSynopsisController.xib; sourceTree = "<group>"; };
+		EB77436A1CE9C964007D83E9 /* BLCommentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCommentController.h; sourceTree = "<group>"; };
+		EB77436B1CE9C964007D83E9 /* BLCommentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCommentController.m; sourceTree = "<group>"; };
 		EBD7C2ED1CD70C7A006F2016 /* LJKBILIBILI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJKBILIBILI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD7C2FA1CD70C7A006F2016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBD7C2FF1CD70C7A006F2016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -630,6 +635,9 @@
 				EB7743501CE6180F007D83E9 /* BLPlayView.m */,
 				EB7743521CE61951007D83E9 /* BLSynopsisController.h */,
 				EB7743531CE61951007D83E9 /* BLSynopsisController.m */,
+				EB7743681CE73DD0007D83E9 /* BLSynopsisController.xib */,
+				EB77436A1CE9C964007D83E9 /* BLCommentController.h */,
+				EB77436B1CE9C964007D83E9 /* BLCommentController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -857,6 +865,7 @@
 				EB77431E1CE5DC4B007D83E9 /* BLADCell.xib in Resources */,
 				EB7743241CE5DC4B007D83E9 /* BLScrollCell.xib in Resources */,
 				EB7743221CE5DC4B007D83E9 /* BLCellItem2.xib in Resources */,
+				EB7743691CE73DD0007D83E9 /* BLSynopsisController.xib in Resources */,
 				EB77431C1CE5DC4B007D83E9 /* BLBaseCell.xib in Resources */,
 				EB77421E1CD8ED98007D83E9 /* BLSlidView.xib in Resources */,
 				EBD7C3001CD70C7A006F2016 /* LaunchScreen.storyboard in Resources */,
@@ -990,6 +999,7 @@
 				EB7742531CE2049B007D83E9 /* BLResultItemHead.m in Sources */,
 				EB7743191CE5DC4B007D83E9 /* BLADModal.m in Sources */,
 				EB77434B1CE60B47007D83E9 /* DLSlideView.m in Sources */,
+				EB77436C1CE9C964007D83E9 /* BLCommentController.m in Sources */,
 				EB77429F1CE22268007D83E9 /* SDWebImageDecoder.m in Sources */,
 				EB7742141CD8CAC8007D83E9 /* BLConst.m in Sources */,
 				EB77431F1CE5DC4B007D83E9 /* BLCellItem.m in Sources */,

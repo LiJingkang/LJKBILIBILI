@@ -32,14 +32,6 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4gr-Zm-65J">
-                            <rect key="frame" x="3" y="225" width="10" height="10"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="10" id="EVF-Zb-Stc"/>
-                                <constraint firstAttribute="width" constant="10" id="O6O-Wb-uZo"/>
-                            </constraints>
-                        </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="播放数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBv-6F-AaQ">
                             <rect key="frame" x="16" y="224" width="27" height="11"/>
                             <constraints>
@@ -68,29 +60,35 @@
                                 </mask>
                             </variation>
                         </label>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWq-ya-uoB">
-                            <rect key="frame" x="534" y="225" width="10" height="10"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_info_views3" translatesAutoresizingMaskIntoConstraints="NO" id="O9N-gT-Bju">
+                            <rect key="frame" x="3" y="225" width="10" height="10"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="10" id="25a-Lo-tuP"/>
-                                <constraint firstAttribute="height" constant="10" id="rzL-KD-gEe"/>
+                                <constraint firstAttribute="width" constant="10" id="DaU-8f-aQ9"/>
+                                <constraint firstAttribute="height" constant="10" id="FGg-WG-z0d"/>
                             </constraints>
-                        </view>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_info_danmakus4" translatesAutoresizingMaskIntoConstraints="NO" id="QcW-a2-o3k">
+                            <rect key="frame" x="534" y="225" width="10" height="10"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="10" id="35K-1C-Wi6"/>
+                                <constraint firstAttribute="height" constant="10" id="ScW-RN-bYr"/>
+                            </constraints>
+                        </imageView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="G3R-7q-nNt" firstAttribute="top" secondItem="qba-DC-qv3" secondAttribute="top" id="3UN-9N-yRX"/>
                         <constraint firstAttribute="trailing" secondItem="G3R-7q-nNt" secondAttribute="trailing" id="BDR-tY-iqi"/>
+                        <constraint firstItem="oBv-6F-AaQ" firstAttribute="leading" secondItem="O9N-gT-Bju" secondAttribute="trailing" constant="3" id="DtI-rY-YLB"/>
                         <constraint firstAttribute="trailing" secondItem="rUs-sI-IDw" secondAttribute="trailing" constant="20" id="H6w-LF-C4z"/>
                         <constraint firstItem="rUs-sI-IDw" firstAttribute="top" secondItem="G3R-7q-nNt" secondAttribute="bottom" constant="10" id="HEj-aj-Si9"/>
-                        <constraint firstAttribute="bottom" secondItem="eWq-ya-uoB" secondAttribute="bottom" constant="3" id="Lac-aE-K8L"/>
-                        <constraint firstItem="rUs-sI-IDw" firstAttribute="leading" secondItem="eWq-ya-uoB" secondAttribute="trailing" constant="3" id="Ndr-Rn-py6"/>
+                        <constraint firstItem="O9N-gT-Bju" firstAttribute="leading" secondItem="qba-DC-qv3" secondAttribute="leading" constant="3" id="JVf-B4-rv7"/>
+                        <constraint firstAttribute="bottom" secondItem="O9N-gT-Bju" secondAttribute="bottom" constant="3" id="VYn-gt-nZr"/>
+                        <constraint firstAttribute="bottom" secondItem="QcW-a2-o3k" secondAttribute="bottom" constant="3" id="bpp-iO-LAc"/>
                         <constraint firstAttribute="bottom" secondItem="oBv-6F-AaQ" secondAttribute="bottom" constant="3" id="gDm-1g-PXQ"/>
                         <constraint firstAttribute="bottom" secondItem="rUs-sI-IDw" secondAttribute="bottom" constant="3" id="iyR-Xm-8BE"/>
-                        <constraint firstItem="oBv-6F-AaQ" firstAttribute="leading" secondItem="4gr-Zm-65J" secondAttribute="trailing" constant="3" id="prr-IR-tbP"/>
                         <constraint firstItem="G3R-7q-nNt" firstAttribute="leading" secondItem="qba-DC-qv3" secondAttribute="leading" id="sMG-ia-jXc"/>
-                        <constraint firstItem="4gr-Zm-65J" firstAttribute="leading" secondItem="qba-DC-qv3" secondAttribute="leading" constant="3" id="sb8-qf-aFO"/>
-                        <constraint firstAttribute="bottom" secondItem="4gr-Zm-65J" secondAttribute="bottom" constant="3" id="wpu-E2-1h2"/>
+                        <constraint firstItem="rUs-sI-IDw" firstAttribute="leading" secondItem="QcW-a2-o3k" secondAttribute="trailing" constant="3" id="vC5-EY-Pvs"/>
                     </constraints>
                     <variation key="default">
                         <mask key="constraints">
@@ -131,4 +129,8 @@
             <point key="canvasLocation" x="271" y="181"/>
         </view>
     </objects>
+    <resources>
+        <image name="ic_info_danmakus4" width="41" height="30"/>
+        <image name="ic_info_views3" width="41" height="30"/>
+    </resources>
 </document>

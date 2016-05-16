@@ -13,6 +13,8 @@
 #import "BLDataTool.h"
 #import "MJExtension.h"
 #import "BLCommendCellModel.h"
+#import "BLSynopsisController.h"
+#import "BLCommentController.h"
 
 @interface BLOnePlayController () <UIScrollViewDelegate,DLTabedSlideViewDelegate>
 
@@ -20,6 +22,7 @@
  *  存放的是CommendModel模型
  */
 @property (nonatomic, strong) BLCommendModel *commendModel;
+
 
 
 
@@ -49,19 +52,21 @@
 - (void)setChlidViewController{
 
     DLTabedSlideView *slideView = [[DLTabedSlideView alloc] init]; // 初始化导航栏干
-    slideView.backgroundColor = [UIColor redColor];
+//    slideView.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor grayColor];
     // 这个范围包括子控制器的范围 在代理方法中返回的控制器会自动填充到剩余的部分
+    
 
     slideView.frame = CGRectMake(0, ((mainScreen.bounds.size.width/16) * 9), mainScreen.bounds.size.width, mainScreen.bounds.size.height);
     [self.view addSubview:slideView];
 
     slideView.baseViewController = self; // 设置父控制器
     slideView.delegate = self; // 设置代理
-    slideView.tabItemNormalColor = [UIColor redColor];
-    slideView.tabItemSelectedColor = BLColor(239, 239, 239);
-    slideView.tabbarBottomSpacing = 3.0; // tabBar间距
+    slideView.tabItemNormalColor = [UIColor blackColor];
+    slideView.tabItemSelectedColor = BLColor(217, 81, 127);
+    slideView.tabbarBottomSpacing = 0; // tabBar间距
     //    self.tabedSlideView.tabbarBackgroundImage = [UIImage imageNamed:@"tabbarBk"]; // 背景图片
-    //    self.tabedSlideView.tabbarTrackColor = [UIColor colorWithRed:0.833 green:0.052 blue:0.130 alpha:1.000];
+    slideView.tabbarTrackColor = BLColor(217, 81, 127); // 导航栏下方的指示条颜色
     DLTabedbarItem *item1 = [DLTabedbarItem itemWithTitle:@"简介" image:nil selectedImage:nil];
     DLTabedbarItem *item2 = [DLTabedbarItem itemWithTitle:@"评论" image:nil selectedImage:nil];
 
@@ -106,9 +111,20 @@
 }
 - (UIViewController *)DLTabedSlideView:(DLTabedSlideView *)sender controllerAt:(NSInteger)index
 {
-    UIViewController *viewController = [UIViewController new];
-    return viewController;
+    if (index == 0) {
+        BLSynopsisController *viewController = [BLSynopsisController synopsisController];
+        return viewController;
+    }
+    if (index == 1) {
+        BLCommentController *viewController = [[BLCommentController alloc] init];
 
+//        viewController.commendModel = self
+
+
+        return viewController;
+    }
+
+    return nil;
 }
 
 /**

@@ -10,4 +10,8 @@
 
 @interface BLSynopsisController : UIViewController
 
+
+#pragma mark - 初始化方法
++ (instancetype)synopsisController;
+
 @end
