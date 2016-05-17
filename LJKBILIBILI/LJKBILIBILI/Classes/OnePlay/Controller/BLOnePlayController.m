@@ -24,6 +24,18 @@
 @property (nonatomic, strong) BLCommendModel *commendModel;
 
 
+/**
+ *  子控制器
+ */
+@property (nonatomic, strong) DLTabedSlideView __block *slideView;
+
+
+/**
+ *  记录子控制器Y的偏移量
+ */
+@property (nonatomic, assign) CGFloat lastY;
+
+
 
 
 
@@ -51,28 +63,28 @@
  */
 - (void)setChlidViewController{
 
-    DLTabedSlideView *slideView = [[DLTabedSlideView alloc] init]; // 初始化导航栏干
+    _slideView = [[DLTabedSlideView alloc] init]; // 初始化导航栏干
 //    slideView.backgroundColor = [UIColor redColor];
     self.view.backgroundColor = [UIColor grayColor];
     // 这个范围包括子控制器的范围 在代理方法中返回的控制器会自动填充到剩余的部分
     
 
-    slideView.frame = CGRectMake(0, ((mainScreen.bounds.size.width/16) * 9), mainScreen.bounds.size.width, mainScreen.bounds.size.height);
-    [self.view addSubview:slideView];
+    _slideView.frame = CGRectMake(0, ((mainScreen.bounds.size.width/16) * 9), mainScreen.bounds.size.width, mainScreen.bounds.size.height);
+    [self.view addSubview:_slideView];
 
-    slideView.baseViewController = self; // 设置父控制器
-    slideView.delegate = self; // 设置代理
-    slideView.tabItemNormalColor = [UIColor blackColor];
-    slideView.tabItemSelectedColor = BLColor(217, 81, 127);
-    slideView.tabbarBottomSpacing = 0; // tabBar间距
+    _slideView.baseViewController = self; // 设置父控制器
+    _slideView.delegate = self; // 设置代理
+    _slideView.tabItemNormalColor = [UIColor blackColor];
+    _slideView.tabItemSelectedColor = BLColor(217, 81, 127);
+    _slideView.tabbarBottomSpacing = 0; // tabBar间距
     //    self.tabedSlideView.tabbarBackgroundImage = [UIImage imageNamed:@"tabbarBk"]; // 背景图片
-    slideView.tabbarTrackColor = BLColor(217, 81, 127); // 导航栏下方的指示条颜色
+    _slideView.tabbarTrackColor = BLColor(217, 81, 127); // 导航栏下方的指示条颜色
     DLTabedbarItem *item1 = [DLTabedbarItem itemWithTitle:@"简介" image:nil selectedImage:nil];
     DLTabedbarItem *item2 = [DLTabedbarItem itemWithTitle:@"评论" image:nil selectedImage:nil];
 
-    slideView.tabbarItems = @[item1, item2];
-    [slideView buildTabbar];
-    slideView.selectedIndex = 0;
+    _slideView.tabbarItems = @[item1, item2];
+    [_slideView buildTabbar];
+    _slideView.selectedIndex = 0;
 
 }
 
@@ -81,14 +93,7 @@
     __weak typeof(self) weakSelf = self;
     [BLDataTool GETCommentData:self.baseCellModel
                        success:^(id blCommendModel) {
-                           weakSelf.commendModel = blCommendModel;
-
-                           NSArray *hotsArray =  weakSelf.commendModel.hots;
-
-                           for (BLCommendCellModel *commendCellModel in hotsArray) {
-                               NSLog(@"%@",commendCellModel.content.message);
-                           }
-                           
+                           weakSelf.commendModel = blCommendModel; // 获得评论模型数据
                        }
                        failure:^(NSError *error) {
                            NSLog(@"%@",error);
@@ -113,13 +118,36 @@
 {
     if (index == 0) {
         BLSynopsisController *viewController = [BLSynopsisController synopsisController];
+
+        __weak typeof(self) weakSelf = self;
+        viewController.topViewScroll = ^(CGFloat ScrollY)
+                                        {
+                                            CGFloat moveRY = ScrollY - self.lastY;
+
+//                                            if (weakSelf.slideView.transform.ty >= 70)
+//                                            {
+                                                weakSelf.slideView.transform = CGAffineTransformTranslate(weakSelf.slideView.transform, 0, - moveRY);
+
+//                                            }
+                                            weakSelf.lastY = ScrollY;
+                                        };
         return viewController;
     }
     if (index == 1) {
         BLCommentController *viewController = [[BLCommentController alloc] init];
+        if (self.commendModel)
+        {
+            viewController.commendModel = self.commendModel;
 
-//        viewController.commendModel = self
-
+            __weak typeof(self) weakSelf = self;
+            viewController.topViewScroll = ^(CGFloat ScrollY)
+            {
+                CGFloat moveRY = ScrollY - self.lastY;
+#warning TODO:如何判断
+                weakSelf.slideView.transform = CGAffineTransformTranslate(weakSelf.slideView.transform, 0, - moveRY);
+                weakSelf.lastY = ScrollY;
+            };
+        }
 
         return viewController;
     }

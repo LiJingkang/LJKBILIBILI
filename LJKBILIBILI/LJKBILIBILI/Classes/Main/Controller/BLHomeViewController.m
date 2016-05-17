@@ -106,6 +106,7 @@
 {
         [self.mainScrollView setHeight:mainScreen.bounds.size.height];
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }

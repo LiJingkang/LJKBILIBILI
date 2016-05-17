@@ -85,6 +85,11 @@
 		EB7743671CE71A69007D83E9 /* BLDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7743661CE71A69007D83E9 /* BLDataTool.m */; };
 		EB7743691CE73DD0007D83E9 /* BLSynopsisController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7743681CE73DD0007D83E9 /* BLSynopsisController.xib */; };
 		EB77436C1CE9C964007D83E9 /* BLCommentController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77436B1CE9C964007D83E9 /* BLCommentController.m */; };
+		EB7743711CEAB262007D83E9 /* BLCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77436F1CEAB262007D83E9 /* BLCommentCell.m */; };
+		EB7743721CEAB262007D83E9 /* BLCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7743701CEAB262007D83E9 /* BLCommentCell.xib */; };
+		EB7743751CEB0E3D007D83E9 /* BLCommentHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7743741CEB0E3D007D83E9 /* BLCommentHeader.m */; };
+		EB7743771CEB0E4F007D83E9 /* BLCommentHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7743761CEB0E4F007D83E9 /* BLCommentHeader.xib */; };
+		EB77437A1CEB42D5007D83E9 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7743791CEB42D5007D83E9 /* IJKMediaFramework.framework */; };
 		EBD7C2FB1CD70C7A006F2016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7C2F91CD70C7A006F2016 /* Main.storyboard */; };
 		EBD7C3001CD70C7A006F2016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7C2FE1CD70C7A006F2016 /* LaunchScreen.storyboard */; };
 		EBD7C30B1CD70C7A006F2016 /* LJKBILIBILITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7C30A1CD70C7A006F2016 /* LJKBILIBILITests.m */; };
@@ -256,6 +261,13 @@
 		EB7743681CE73DD0007D83E9 /* BLSynopsisController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLSynopsisController.xib; sourceTree = "<group>"; };
 		EB77436A1CE9C964007D83E9 /* BLCommentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCommentController.h; sourceTree = "<group>"; };
 		EB77436B1CE9C964007D83E9 /* BLCommentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCommentController.m; sourceTree = "<group>"; };
+		EB77436E1CEAB262007D83E9 /* BLCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCommentCell.h; sourceTree = "<group>"; };
+		EB77436F1CEAB262007D83E9 /* BLCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCommentCell.m; sourceTree = "<group>"; };
+		EB7743701CEAB262007D83E9 /* BLCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLCommentCell.xib; sourceTree = "<group>"; };
+		EB7743731CEB0E3D007D83E9 /* BLCommentHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCommentHeader.h; sourceTree = "<group>"; };
+		EB7743741CEB0E3D007D83E9 /* BLCommentHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCommentHeader.m; sourceTree = "<group>"; };
+		EB7743761CEB0E4F007D83E9 /* BLCommentHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLCommentHeader.xib; sourceTree = "<group>"; };
+		EB7743791CEB42D5007D83E9 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		EBD7C2ED1CD70C7A006F2016 /* LJKBILIBILI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJKBILIBILI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD7C2FA1CD70C7A006F2016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBD7C2FF1CD70C7A006F2016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -273,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				135673EE604A869AB6A2B182 /* libPods.a in Frameworks */,
+				EB77437A1CEB42D5007D83E9 /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +318,7 @@
 		D502FA61AD9805B7422AEC38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EB7743791CEB42D5007D83E9 /* IJKMediaFramework.framework */,
 				35504959B463B0602D128A02 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -557,9 +571,9 @@
 		EB7742FE1CE5DC4B007D83E9 /* Communal */ = {
 			isa = PBXGroup;
 			children = (
+				EB7743041CE5DC4B007D83E9 /* View */,
 				EB77432D1CE5DC87007D83E9 /* Controller */,
 				EB7742FF1CE5DC4B007D83E9 /* Model */,
-				EB7743041CE5DC4B007D83E9 /* View */,
 			);
 			path = Communal;
 			sourceTree = "<group>";
@@ -588,7 +602,9 @@
 		EB7743041CE5DC4B007D83E9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EB77436D1CEAB23B007D83E9 /* BLCommentCell */,
 				EB7743051CE5DC4B007D83E9 /* BaseCellView */,
+				EB7743181CE5DC4B007D83E9 /* smallestCell */,
 				EB7743091CE5DC4B007D83E9 /* BLADCell.h */,
 				EB77430A1CE5DC4B007D83E9 /* BLADCell.m */,
 				EB77430B1CE5DC4B007D83E9 /* BLADCell.xib */,
@@ -604,7 +620,6 @@
 				EB7743151CE5DC4B007D83E9 /* BLTopicCell.h */,
 				EB7743161CE5DC4B007D83E9 /* BLTopicCell.m */,
 				EB7743171CE5DC4B007D83E9 /* BLTopicCell.xib */,
-				EB7743181CE5DC4B007D83E9 /* smallestCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -695,6 +710,19 @@
 				EB7743461CE60B47007D83E9 /* DLSlideTabbarProtocol.h */,
 			);
 			path = DLTabbarView;
+			sourceTree = "<group>";
+		};
+		EB77436D1CEAB23B007D83E9 /* BLCommentCell */ = {
+			isa = PBXGroup;
+			children = (
+				EB77436E1CEAB262007D83E9 /* BLCommentCell.h */,
+				EB77436F1CEAB262007D83E9 /* BLCommentCell.m */,
+				EB7743701CEAB262007D83E9 /* BLCommentCell.xib */,
+				EB7743731CEB0E3D007D83E9 /* BLCommentHeader.h */,
+				EB7743741CEB0E3D007D83E9 /* BLCommentHeader.m */,
+				EB7743761CEB0E4F007D83E9 /* BLCommentHeader.xib */,
+			);
+			path = BLCommentCell;
 			sourceTree = "<group>";
 		};
 		EBD7C2E41CD70C7A006F2016 = {
@@ -869,10 +897,12 @@
 				EB77431C1CE5DC4B007D83E9 /* BLBaseCell.xib in Resources */,
 				EB77421E1CD8ED98007D83E9 /* BLSlidView.xib in Resources */,
 				EBD7C3001CD70C7A006F2016 /* LaunchScreen.storyboard in Resources */,
+				EB7743721CEAB262007D83E9 /* BLCommentCell.xib in Resources */,
 				EB77423E1CE0A2A3007D83E9 /* Assets.xcassets in Resources */,
 				EB77423F1CE0A2A3007D83E9 /* Info.plist in Resources */,
 				EB7743371CE5FD69007D83E9 /* BLOnePlayController.storyboard in Resources */,
 				EBD7C2FB1CD70C7A006F2016 /* Main.storyboard in Resources */,
+				EB7743771CEB0E4F007D83E9 /* BLCommentHeader.xib in Resources */,
 				EB7742401CE0A2A3007D83E9 /* Setting.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -953,6 +983,7 @@
 				EB77434C1CE60B47007D83E9 /* DLFixedTabbarView.m in Sources */,
 				EB7742A41CE22268007D83E9 /* UIButton+WebCache.m in Sources */,
 				EB77431A1CE5DC4B007D83E9 /* BLBaseCellModel.m in Sources */,
+				EB7743711CEAB262007D83E9 /* BLCommentCell.m in Sources */,
 				EB77434A1CE60B47007D83E9 /* DLCustomSlideView.m in Sources */,
 				EB77435A1CE71545007D83E9 /* BLPageModel.m in Sources */,
 				EB7742A21CE22268007D83E9 /* SDWebImageManager.m in Sources */,
@@ -963,6 +994,7 @@
 				EB77431D1CE5DC4B007D83E9 /* BLADCell.m in Sources */,
 				EB77429E1CE22268007D83E9 /* SDWebImageCompat.m in Sources */,
 				EB7743601CE7182A007D83E9 /* BLMemberModel.m in Sources */,
+				EB7743751CEB0E3D007D83E9 /* BLCommentHeader.m in Sources */,
 				EB7742171CD8CEE3007D83E9 /* BLTopView.m in Sources */,
 				EB77420B1CD8B702007D83E9 /* BLHomeViewController.m in Sources */,
 				EB7742661CE206B7007D83E9 /* MJFoundation.m in Sources */,
@@ -1154,6 +1186,10 @@
 			baseConfigurationReference = AC28F008A4D1D594A03F4A42 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/LJKBILIBILI/Classes/Source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LJK.LJKBILIBILI;
@@ -1166,6 +1202,10 @@
 			baseConfigurationReference = 4936E3804F9914AEEC7F4E42 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/LJKBILIBILI/Classes/Source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LJK.LJKBILIBILI;

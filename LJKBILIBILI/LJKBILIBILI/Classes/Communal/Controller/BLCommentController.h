@@ -10,7 +10,9 @@
 #import "BLCommendModel.h"
 
 
-@interface BLCommentController : UITableViewController
+@interface BLCommentController : UIViewController
+
+@property (nonatomic, copy) void (^topViewScroll)(CGFloat ScrollY);
 
 /**
  *  评论模型

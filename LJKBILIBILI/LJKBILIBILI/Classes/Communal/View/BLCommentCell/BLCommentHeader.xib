@@ -1,15 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="ksk-4g-F2i" customClass="BLCommentHeader">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hur-55-UsY">
+                    <rect key="frame" x="0.0" y="299.5" width="600" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="oVr-8f-ZUi"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RdD-eR-Xtu">
+                    <rect key="frame" x="230" y="285" width="140" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="xwz-Iu-4BR"/>
+                    </constraints>
+                    <color key="tintColor" red="0.91864746809005737" green="0.010926137678325176" blue="0.98933905363082886" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="更多热门评论&gt;&gt;"/>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hur-55-UsY" secondAttribute="trailing" id="0nH-BE-0T8"/>
+                <constraint firstItem="RdD-eR-Xtu" firstAttribute="centerX" secondItem="ksk-4g-F2i" secondAttribute="centerX" id="7FM-t6-GZS"/>
+                <constraint firstItem="RdD-eR-Xtu" firstAttribute="centerY" secondItem="ksk-4g-F2i" secondAttribute="centerY" id="d5C-Gd-eqE"/>
+                <constraint firstItem="hur-55-UsY" firstAttribute="leading" secondItem="ksk-4g-F2i" secondAttribute="leading" id="l92-A7-CEM"/>
+                <constraint firstItem="hur-55-UsY" firstAttribute="centerY" secondItem="ksk-4g-F2i" secondAttribute="centerY" id="xJz-rf-izZ"/>
+            </constraints>
         </view>
     </objects>
 </document>

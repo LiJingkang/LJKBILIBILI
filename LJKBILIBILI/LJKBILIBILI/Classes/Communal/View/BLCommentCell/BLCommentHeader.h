@@ -10,4 +10,7 @@
 
 @interface BLCommentHeader : UITableViewHeaderFooterView
 
+
++ (instancetype)commentHeader;
+
 @end

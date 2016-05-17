@@ -10,6 +10,8 @@
 
 @interface BLSynopsisController : UIViewController
 
+@property (nonatomic, copy) void (^topViewScroll)(CGFloat ScrollY);
+
 
 #pragma mark - 初始化方法
 + (instancetype)synopsisController;

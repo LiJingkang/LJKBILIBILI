@@ -13,7 +13,7 @@
 
 
 
-@interface BLSynopsisController ()
+@interface BLSynopsisController ()<UIScrollViewDelegate>
 // 主页面的底部scrollView
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
@@ -34,6 +34,8 @@
     self.scrollView.alwaysBounceVertical = YES;
     self.scrollView.bounces = YES;
     self.scrollView.backgroundColor = [UIColor grayColor];
+    self.scrollView.delegate = self;
+    self.scrollView.contentSize = CGSizeMake(mainScreen.bounds.size.width, mainScreen.bounds.size.height);
 //    self.scrollView.contentSize = mainScreen.bounds.size;
 
 
@@ -51,7 +53,18 @@
     return [[[NSBundle mainBundle] loadNibNamed:@"BLSynopsisController" owner:nil options:nil] lastObject];
 }
 
+#pragma mark - scrollView Delegate
 
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGFloat scrollY = scrollView.contentOffset.y;
+    NSLog(@"%f",scrollY);
 
+    if (scrollY > 0) {
+        if (self.topViewScroll) {
+            self.topViewScroll(scrollY);
+        }
+    }
 
+}
 @end

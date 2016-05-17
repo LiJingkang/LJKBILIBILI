@@ -9,9 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "BLMemberModel.h"
 #import "BLContentModel.h"
+#import <UIKit/UIKit.h>
 
 @interface BLCommendCellModel : NSObject
 
+/**
+ *  自己添加的用来控制高度
+ */
+@property (nonatomic, assign) CGFloat cellHeight;
 
 @property (nonatomic, assign) NSInteger rpid;
 @property (nonatomic, assign) NSInteger oid;
@@ -42,12 +47,6 @@
 
 
 @property (nonatomic, strong) NSString *replies;
-
-
-
-
-
-
 
 
 @end
