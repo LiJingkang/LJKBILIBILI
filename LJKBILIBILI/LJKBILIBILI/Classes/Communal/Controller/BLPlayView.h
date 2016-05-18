@@ -7,14 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <AVFoundation/AVFoundation.h>
 #import <IJKMediaFramework/IJKMediaFramework.h>
 
-@interface BLPlayView : UIViewController
+
+@interface BLPlayView : UIView
 
 #warning TODO:使用B站框架替换
 
 @property (atomic, retain) id <IJKMediaPlayback> player;
+
+
++ (instancetype)playViewController;
 
 
 @end

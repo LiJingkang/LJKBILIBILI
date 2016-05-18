@@ -96,6 +96,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="playView" destination="gaQ-3f-2Z0" id="0I5-eh-kXU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nxa-jd-Aap" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

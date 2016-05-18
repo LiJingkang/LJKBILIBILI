@@ -15,6 +15,8 @@
 #import "BLCommendCellModel.h"
 #import "BLSynopsisController.h"
 #import "BLCommentController.h"
+#import "BLPlayView.h"
+#import "PlayerViewController.h"
 
 @interface BLOnePlayController () <UIScrollViewDelegate,DLTabedSlideViewDelegate>
 
@@ -29,14 +31,15 @@
  */
 @property (nonatomic, strong) DLTabedSlideView __block *slideView;
 
+/**
+ *  放置的是playViewController
+ */
+@property (weak, nonatomic) IBOutlet UIView *playView;
 
 /**
  *  记录子控制器Y的偏移量
  */
 @property (nonatomic, assign) CGFloat lastY;
-
-
-
 
 
 @end
@@ -50,11 +53,32 @@
 
     [self setChlidViewController];
 
+
+    CGRect playViewFrame = CGRectMake(0, 0, mainScreen.bounds.size.width, ((mainScreen.bounds.size.width/16) * 9));
+    PlayerViewController *vc = [[PlayerViewController alloc]
+                                initWithURL:[NSURL URLWithString:@"http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8"]
+                                withFrame:playViewFrame];
+
+    [self.playView addSubview:vc];
+
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+/**
+ *  view即将从window上移除(即将看不见)
+ *
+ */
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+
+
 }
 
 #pragma mark - 私有方法
@@ -171,6 +195,22 @@
     [self.navigationController popViewControllerAnimated:YES]; // push对应的pop
 //    [self dismissViewControllerAnimated:YES completion:nil]; // dismiss对用的model
  }
+
+#pragma mark - 旋转
+- (void) willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    if (UIInterfaceOrientationIsPortrait(toInterfaceOrientation)) {
+        //如果当前是竖屏要完成的事情
+        self.slideView.hidden = NO;
+        self.navigationController.navigationBar.hidden = YES;
+
+    }else {
+        //其他情况完成事情
+        //如果当前是竖屏要完成的事情
+        self.slideView.hidden = YES;
+        self.navigationController.navigationBar.hidden = NO;
+    }
+}
 
 
 

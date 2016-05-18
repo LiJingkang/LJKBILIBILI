@@ -10,6 +10,7 @@
 #import "BLConst.h"
 #import "BLBaseViewController.h"
 #import "BLCommendViewController.h"
+#import "BLOnePlayController_new.h"
 
 
 

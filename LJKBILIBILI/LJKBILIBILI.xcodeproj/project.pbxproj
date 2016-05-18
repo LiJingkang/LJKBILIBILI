@@ -89,7 +89,27 @@
 		EB7743721CEAB262007D83E9 /* BLCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7743701CEAB262007D83E9 /* BLCommentCell.xib */; };
 		EB7743751CEB0E3D007D83E9 /* BLCommentHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7743741CEB0E3D007D83E9 /* BLCommentHeader.m */; };
 		EB7743771CEB0E4F007D83E9 /* BLCommentHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7743761CEB0E4F007D83E9 /* BLCommentHeader.xib */; };
-		EB77437A1CEB42D5007D83E9 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7743791CEB42D5007D83E9 /* IJKMediaFramework.framework */; };
+		EB7744241CEC1011007D83E9 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7744231CEC1011007D83E9 /* IJKMediaFramework.framework */; };
+		EB7744261CEC109C007D83E9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7744251CEC109C007D83E9 /* libz.tbd */; };
+		EB7744281CEC10A8007D83E9 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7744271CEC10A7007D83E9 /* libbz2.tbd */; };
+		EB77442A1CEC10BF007D83E9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7744291CEC10BF007D83E9 /* AudioToolbox.framework */; };
+		EB77442C1CEC10CD007D83E9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB77442B1CEC10CD007D83E9 /* AVFoundation.framework */; };
+		EB77442E1CEC10E2007D83E9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB77442D1CEC10E2007D83E9 /* CoreGraphics.framework */; };
+		EB7744301CEC10EF007D83E9 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB77442F1CEC10EF007D83E9 /* CoreMedia.framework */; };
+		EB7744321CEC10FB007D83E9 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7744311CEC10FB007D83E9 /* CoreVideo.framework */; };
+		EB7744341CEC1106007D83E9 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7744331CEC1106007D83E9 /* MediaPlayer.framework */; };
+		EB7744361CEC111B007D83E9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7744351CEC111B007D83E9 /* MobileCoreServices.framework */; };
+		EB7744381CEC112C007D83E9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7744371CEC112C007D83E9 /* OpenGLES.framework */; };
+		EB77443A1CEC113C007D83E9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7744391CEC113C007D83E9 /* QuartzCore.framework */; };
+		EB77443C1CEC1148007D83E9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB77443B1CEC1148007D83E9 /* UIKit.framework */; };
+		EB77443E1CEC1156007D83E9 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB77443D1CEC1156007D83E9 /* VideoToolbox.framework */; };
+		EB7744401CEC1685007D83E9 /* BLPlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB77443F1CEC1685007D83E9 /* BLPlayView.xib */; };
+		EB7744441CEC2DC5007D83E9 /* BLOnePlayController_new.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7744421CEC2DC5007D83E9 /* BLOnePlayController_new.m */; };
+		EB7744451CEC2DC5007D83E9 /* BLOnePlayController_new.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7744431CEC2DC5007D83E9 /* BLOnePlayController_new.xib */; };
+		EB7744511CEC88D2007D83E9 /* PlayerView+Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7744481CEC88D2007D83E9 /* PlayerView+Notification.m */; };
+		EB7744521CEC88D2007D83E9 /* PlayerViewControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77444A1CEC88D2007D83E9 /* PlayerViewControl.m */; };
+		EB7744531CEC88D2007D83E9 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77444C1CEC88D2007D83E9 /* PlayerViewController.m */; };
+		EB7744541CEC88D2007D83E9 /* PlayerViewRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77444E1CEC88D2007D83E9 /* PlayerViewRotate.m */; };
 		EBD7C2FB1CD70C7A006F2016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7C2F91CD70C7A006F2016 /* Main.storyboard */; };
 		EBD7C3001CD70C7A006F2016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7C2FE1CD70C7A006F2016 /* LaunchScreen.storyboard */; };
 		EBD7C30B1CD70C7A006F2016 /* LJKBILIBILITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7C30A1CD70C7A006F2016 /* LJKBILIBILITests.m */; };
@@ -267,7 +287,32 @@
 		EB7743731CEB0E3D007D83E9 /* BLCommentHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCommentHeader.h; sourceTree = "<group>"; };
 		EB7743741CEB0E3D007D83E9 /* BLCommentHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCommentHeader.m; sourceTree = "<group>"; };
 		EB7743761CEB0E4F007D83E9 /* BLCommentHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLCommentHeader.xib; sourceTree = "<group>"; };
-		EB7743791CEB42D5007D83E9 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		EB7744231CEC1011007D83E9 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		EB7744251CEC109C007D83E9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		EB7744271CEC10A7007D83E9 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		EB7744291CEC10BF007D83E9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EB77442B1CEC10CD007D83E9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EB77442D1CEC10E2007D83E9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EB77442F1CEC10EF007D83E9 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		EB7744311CEC10FB007D83E9 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		EB7744331CEC1106007D83E9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		EB7744351CEC111B007D83E9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		EB7744371CEC112C007D83E9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		EB7744391CEC113C007D83E9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EB77443B1CEC1148007D83E9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EB77443D1CEC1156007D83E9 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		EB77443F1CEC1685007D83E9 /* BLPlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLPlayView.xib; sourceTree = "<group>"; };
+		EB7744411CEC2DC5007D83E9 /* BLOnePlayController_new.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLOnePlayController_new.h; sourceTree = "<group>"; };
+		EB7744421CEC2DC5007D83E9 /* BLOnePlayController_new.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLOnePlayController_new.m; sourceTree = "<group>"; };
+		EB7744431CEC2DC5007D83E9 /* BLOnePlayController_new.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLOnePlayController_new.xib; sourceTree = "<group>"; };
+		EB7744471CEC88D2007D83E9 /* PlayerView+Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PlayerView+Notification.h"; sourceTree = "<group>"; };
+		EB7744481CEC88D2007D83E9 /* PlayerView+Notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PlayerView+Notification.m"; sourceTree = "<group>"; };
+		EB7744491CEC88D2007D83E9 /* PlayerViewControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewControl.h; sourceTree = "<group>"; };
+		EB77444A1CEC88D2007D83E9 /* PlayerViewControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewControl.m; sourceTree = "<group>"; };
+		EB77444B1CEC88D2007D83E9 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		EB77444C1CEC88D2007D83E9 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		EB77444D1CEC88D2007D83E9 /* PlayerViewRotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewRotate.h; sourceTree = "<group>"; };
+		EB77444E1CEC88D2007D83E9 /* PlayerViewRotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewRotate.m; sourceTree = "<group>"; };
 		EBD7C2ED1CD70C7A006F2016 /* LJKBILIBILI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJKBILIBILI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD7C2FA1CD70C7A006F2016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBD7C2FF1CD70C7A006F2016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -284,8 +329,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB77443E1CEC1156007D83E9 /* VideoToolbox.framework in Frameworks */,
+				EB77443C1CEC1148007D83E9 /* UIKit.framework in Frameworks */,
+				EB77443A1CEC113C007D83E9 /* QuartzCore.framework in Frameworks */,
+				EB7744381CEC112C007D83E9 /* OpenGLES.framework in Frameworks */,
+				EB7744361CEC111B007D83E9 /* MobileCoreServices.framework in Frameworks */,
+				EB7744341CEC1106007D83E9 /* MediaPlayer.framework in Frameworks */,
+				EB7744321CEC10FB007D83E9 /* CoreVideo.framework in Frameworks */,
+				EB7744301CEC10EF007D83E9 /* CoreMedia.framework in Frameworks */,
+				EB77442E1CEC10E2007D83E9 /* CoreGraphics.framework in Frameworks */,
+				EB77442C1CEC10CD007D83E9 /* AVFoundation.framework in Frameworks */,
+				EB77442A1CEC10BF007D83E9 /* AudioToolbox.framework in Frameworks */,
+				EB7744281CEC10A8007D83E9 /* libbz2.tbd in Frameworks */,
+				EB7744261CEC109C007D83E9 /* libz.tbd in Frameworks */,
 				135673EE604A869AB6A2B182 /* libPods.a in Frameworks */,
-				EB77437A1CEB42D5007D83E9 /* IJKMediaFramework.framework in Frameworks */,
+				EB7744241CEC1011007D83E9 /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +376,20 @@
 		D502FA61AD9805B7422AEC38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EB7743791CEB42D5007D83E9 /* IJKMediaFramework.framework */,
+				EB77443D1CEC1156007D83E9 /* VideoToolbox.framework */,
+				EB77443B1CEC1148007D83E9 /* UIKit.framework */,
+				EB7744391CEC113C007D83E9 /* QuartzCore.framework */,
+				EB7744371CEC112C007D83E9 /* OpenGLES.framework */,
+				EB7744351CEC111B007D83E9 /* MobileCoreServices.framework */,
+				EB7744331CEC1106007D83E9 /* MediaPlayer.framework */,
+				EB7744311CEC10FB007D83E9 /* CoreVideo.framework */,
+				EB77442F1CEC10EF007D83E9 /* CoreMedia.framework */,
+				EB77442D1CEC10E2007D83E9 /* CoreGraphics.framework */,
+				EB77442B1CEC10CD007D83E9 /* AVFoundation.framework */,
+				EB7744291CEC10BF007D83E9 /* AudioToolbox.framework */,
+				EB7744271CEC10A7007D83E9 /* libbz2.tbd */,
+				EB7744251CEC109C007D83E9 /* libz.tbd */,
+				EB7744231CEC1011007D83E9 /* IJKMediaFramework.framework */,
 				35504959B463B0602D128A02 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -644,10 +715,12 @@
 		EB77432D1CE5DC87007D83E9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EB7744461CEC88D2007D83E9 /* LJKPlayerView */,
 				EB77432E1CE5DC87007D83E9 /* BLBaseViewController.h */,
 				EB77432F1CE5DC87007D83E9 /* BLBaseViewController.m */,
 				EB77434F1CE6180F007D83E9 /* BLPlayView.h */,
 				EB7743501CE6180F007D83E9 /* BLPlayView.m */,
+				EB77443F1CEC1685007D83E9 /* BLPlayView.xib */,
 				EB7743521CE61951007D83E9 /* BLSynopsisController.h */,
 				EB7743531CE61951007D83E9 /* BLSynopsisController.m */,
 				EB7743681CE73DD0007D83E9 /* BLSynopsisController.xib */,
@@ -671,6 +744,9 @@
 				EB7743331CE5FCEC007D83E9 /* BLOnePlayController.h */,
 				EB7743341CE5FCEC007D83E9 /* BLOnePlayController.m */,
 				EB7743361CE5FD69007D83E9 /* BLOnePlayController.storyboard */,
+				EB7744411CEC2DC5007D83E9 /* BLOnePlayController_new.h */,
+				EB7744421CEC2DC5007D83E9 /* BLOnePlayController_new.m */,
+				EB7744431CEC2DC5007D83E9 /* BLOnePlayController_new.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -723,6 +799,21 @@
 				EB7743761CEB0E4F007D83E9 /* BLCommentHeader.xib */,
 			);
 			path = BLCommentCell;
+			sourceTree = "<group>";
+		};
+		EB7744461CEC88D2007D83E9 /* LJKPlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				EB7744471CEC88D2007D83E9 /* PlayerView+Notification.h */,
+				EB7744481CEC88D2007D83E9 /* PlayerView+Notification.m */,
+				EB7744491CEC88D2007D83E9 /* PlayerViewControl.h */,
+				EB77444A1CEC88D2007D83E9 /* PlayerViewControl.m */,
+				EB77444B1CEC88D2007D83E9 /* PlayerViewController.h */,
+				EB77444C1CEC88D2007D83E9 /* PlayerViewController.m */,
+				EB77444D1CEC88D2007D83E9 /* PlayerViewRotate.h */,
+				EB77444E1CEC88D2007D83E9 /* PlayerViewRotate.m */,
+			);
+			path = LJKPlayerView;
 			sourceTree = "<group>";
 		};
 		EBD7C2E41CD70C7A006F2016 = {
@@ -895,12 +986,14 @@
 				EB7743221CE5DC4B007D83E9 /* BLCellItem2.xib in Resources */,
 				EB7743691CE73DD0007D83E9 /* BLSynopsisController.xib in Resources */,
 				EB77431C1CE5DC4B007D83E9 /* BLBaseCell.xib in Resources */,
+				EB7744451CEC2DC5007D83E9 /* BLOnePlayController_new.xib in Resources */,
 				EB77421E1CD8ED98007D83E9 /* BLSlidView.xib in Resources */,
 				EBD7C3001CD70C7A006F2016 /* LaunchScreen.storyboard in Resources */,
 				EB7743721CEAB262007D83E9 /* BLCommentCell.xib in Resources */,
 				EB77423E1CE0A2A3007D83E9 /* Assets.xcassets in Resources */,
 				EB77423F1CE0A2A3007D83E9 /* Info.plist in Resources */,
 				EB7743371CE5FD69007D83E9 /* BLOnePlayController.storyboard in Resources */,
+				EB7744401CEC1685007D83E9 /* BLPlayView.xib in Resources */,
 				EBD7C2FB1CD70C7A006F2016 /* Main.storyboard in Resources */,
 				EB7743771CEB0E4F007D83E9 /* BLCommentHeader.xib in Resources */,
 				EB7742401CE0A2A3007D83E9 /* Setting.plist in Resources */,
@@ -995,6 +1088,7 @@
 				EB77429E1CE22268007D83E9 /* SDWebImageCompat.m in Sources */,
 				EB7743601CE7182A007D83E9 /* BLMemberModel.m in Sources */,
 				EB7743751CEB0E3D007D83E9 /* BLCommentHeader.m in Sources */,
+				EB7744511CEC88D2007D83E9 /* PlayerView+Notification.m in Sources */,
 				EB7742171CD8CEE3007D83E9 /* BLTopView.m in Sources */,
 				EB77420B1CD8B702007D83E9 /* BLHomeViewController.m in Sources */,
 				EB7742661CE206B7007D83E9 /* MJFoundation.m in Sources */,
@@ -1002,6 +1096,7 @@
 				EB77434E1CE60B47007D83E9 /* DLTabedSlideView.m in Sources */,
 				EB7743631CE71845007D83E9 /* BLContentModel.m in Sources */,
 				EB77431B1CE5DC4B007D83E9 /* BLBaseCell.m in Sources */,
+				EB7744521CEC88D2007D83E9 /* PlayerViewControl.m in Sources */,
 				EB7742FD1CE5DC31007D83E9 /* BLHttpTool.m in Sources */,
 				EB7742C31CE363F9007D83E9 /* BLCommendViewLayout.m in Sources */,
 				EB7742D81CE46A05007D83E9 /* YiRefreshFooter.m in Sources */,
@@ -1011,6 +1106,7 @@
 				EB7743231CE5DC4B007D83E9 /* BLScrollCell.m in Sources */,
 				EB77434D1CE60B47007D83E9 /* DLScrollTabbarView.m in Sources */,
 				EB7742D91CE46A05007D83E9 /* YiRefreshHeader.m in Sources */,
+				EB7744441CEC2DC5007D83E9 /* BLOnePlayController_new.m in Sources */,
 				EB7742A71CE22268007D83E9 /* UIImage+WebP.m in Sources */,
 				EB77429D1CE22268007D83E9 /* SDImageCache.m in Sources */,
 				EB7743211CE5DC4B007D83E9 /* BLCellItem2.m in Sources */,
@@ -1025,6 +1121,7 @@
 				EB7742081CD8B6D6007D83E9 /* BLNavigationController.m in Sources */,
 				EB7743511CE6180F007D83E9 /* BLPlayView.m in Sources */,
 				EB7742681CE206B7007D83E9 /* MJType.m in Sources */,
+				EB7744531CEC88D2007D83E9 /* PlayerViewController.m in Sources */,
 				EB77429C1CE22268007D83E9 /* NSData+ImageContentType.m in Sources */,
 				EB7742671CE206B7007D83E9 /* MJIvar.m in Sources */,
 				EB77421C1CD8ED74007D83E9 /* BLSlidView.m in Sources */,
@@ -1040,6 +1137,7 @@
 				EB7743571CE71376007D83E9 /* BLCommendModel.m in Sources */,
 				EB77423A1CE0A27C007D83E9 /* main.m in Sources */,
 				EB7742A31CE22268007D83E9 /* SDWebImagePrefetcher.m in Sources */,
+				EB7744541CEC88D2007D83E9 /* PlayerViewRotate.m in Sources */,
 				EB77429B1CE22268007D83E9 /* MKAnnotationView+WebCache.m in Sources */,
 				EB7742A51CE22268007D83E9 /* UIImage+GIF.m in Sources */,
 				EB7742471CE1DAE4007D83E9 /* Foundation+Log.m in Sources */,

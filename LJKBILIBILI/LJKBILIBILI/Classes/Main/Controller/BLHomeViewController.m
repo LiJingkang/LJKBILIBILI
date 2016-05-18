@@ -104,7 +104,7 @@
 
 - (void)awakeFromNib
 {
-        [self.mainScrollView setHeight:mainScreen.bounds.size.height];
+    [self.mainScrollView setHeight:mainScreen.bounds.size.height];
 }
 
 - (void)didReceiveMemoryWarning {
