@@ -2,7 +2,7 @@
 
 * 个人项目，会陆续完成主要功能
 
-** 运行前 pod
+* 运行前 pod
 
 # UPDATE
 
@@ -36,6 +36,7 @@
             playController
 
 2016-05-14
+
     添加 basecell的点击事件
     添加 playController
     添加 onePlayController
@@ -43,6 +44,7 @@
     创建 BLSynopsisController
 
 2016-05-13
+
     完成：推荐模块的数据处理和显示
             现在可以根据服务器返回的数据来自动布局
     未完成：live的模型有不同，等待修改
@@ -51,12 +53,14 @@
     TODO: cell点击，先完成播放页面和播放系统
 
 2016-05-12
+
     ...
     ... 
 
 
 # TODO
 2016-05-18
+
     播放器控制台UI优化
     控制台业务逻辑处理
 
