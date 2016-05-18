@@ -7,12 +7,14 @@
 # UPDATE
 
 2016-05-18
+
     完成 基于ijkplayer的播放器
     实现 自定义播放器 UIView封装，最小化播放 全屏播放 
     TODO: 研究ijkplayer 
           Options
 
 2016-05-17
+
     完成 简介 评论  (剩余数据加载)
     TODO: 将自己实现的自适应高度换成框架
             UITableView-FDTemplateLayoutCell
@@ -20,9 +22,11 @@
     子控制器滑动优化
 
 2016-05-16
+
     完成子控制器滑动过程中tabBar和顶部playViewController的移动和控制
 
 2016-05-15
+
     重写 网络层  
     添加 数据层
     完成 评论模型
