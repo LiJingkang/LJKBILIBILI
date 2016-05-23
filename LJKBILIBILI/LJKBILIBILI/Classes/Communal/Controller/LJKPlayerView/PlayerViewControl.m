@@ -13,9 +13,11 @@
     BOOL _isMediaSliderDragged;
 }
 
+
+#pragma mark - 父类方法
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
-    if (self) {
+    if (self) { // 添加按钮
         self.frame = CGRectMake(0, frame.size.height - 30, self.frame.size.width, 30);
         
         _overlay = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 30)];
@@ -82,10 +84,82 @@
     return self;
 }
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+
+//    if (self) {
+////        self.frame = CGRectMake(0, frame.size.height - 30, self.frame.size.width, 30);
+//
+//        _overlay = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 30)];
+//        _overlay.backgroundColor = [UIColor clearColor];
+//
+//
+//        _buttomlay = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 30)];
+//        _buttomlay.backgroundColor = [UIColor blackColor];
+//        _buttomlay.alpha = 0.6f;
+//
+//        _switchBut = [UIButton buttonWithType:UIButtonTypeCustom];
+//        _switchBut.frame = CGRectMake(1, 1, 45, 30);
+//        _switchBut.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+//        _switchBut.backgroundColor = [UIColor clearColor];
+//        [_switchBut setTitle:@"普清" forState:UIControlStateNormal];
+//        _switchBut.titleLabel.font = [UIFont systemFontOfSize:15];
+//        _switchBut.showsTouchWhenHighlighted = YES;
+//
+//
+//
+//        _slider = [[UISlider alloc] initWithFrame:CGRectMake(_switchBut.frame.size.width, 5, 250, 20)];
+//        _slider.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+//        _slider.continuous = NO;
+//        _slider.value = 0;
+//
+//        _timer = [[UILabel alloc] initWithFrame:CGRectMake(300, 10, 50, 10)];
+//        _timer.backgroundColor = [UIColor clearColor];
+//        //        _timer.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+//        _timer.textColor = [UIColor whiteColor];
+//        _timer.adjustsFontSizeToFitWidth = NO;
+//        _timer.textAlignment = NSTextAlignmentLeft;
+//        _timer.text = @"--:--";
+//        _timer.font = [UIFont systemFontOfSize:9];
+//
+//
+//        _danmakuBut = [UIButton buttonWithType:UIButtonTypeCustom];
+//        _danmakuBut.frame = CGRectMake(345, 1, 45, 30);
+//        _danmakuBut.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+//        _danmakuBut.backgroundColor = [UIColor clearColor];
+//        [_danmakuBut setTitle:@"弹幕" forState:UIControlStateNormal];
+//        _danmakuBut.titleLabel.font = [UIFont systemFontOfSize:15];
+//        _danmakuBut.showsTouchWhenHighlighted = YES;
+//
+//
+//        _fullScreenBut = [UIButton buttonWithType:UIButtonTypeCustom];
+//        _fullScreenBut.frame = CGRectMake(380, 1, 45, 30);
+//        _fullScreenBut.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+//        _fullScreenBut.backgroundColor = [UIColor clearColor];
+//        [_fullScreenBut setTitle:@"全" forState:UIControlStateNormal];
+//        _fullScreenBut.titleLabel.font = [UIFont systemFontOfSize:15];
+//        _fullScreenBut.showsTouchWhenHighlighted = YES;
+//
+//
+//        [_overlay addSubview:_buttomlay];
+//        [_overlay addSubview:_switchBut];
+//        [_overlay addSubview:_slider];
+//        [_overlay addSubview:_timer];
+//        [_overlay addSubview:_danmakuBut];
+//        [_overlay addSubview:_fullScreenBut];
+//
+//
+//        [self addSubview:_overlay];
+//    }
+    return self;
+}
+
 - (void)awakeFromNib {
     [self refreshPlayerContrl];
 }
 
+#pragma mark - 实例方法
 - (void)showNoFade {
     self.overlay.hidden = NO;
     [self cancelDelayedHide];
@@ -97,7 +171,7 @@
     [self performSelector:@selector(hide) withObject:nil afterDelay:5];
 }
 
--(void)hide {
+- (void)hide {
     self.overlay.hidden = YES;
     [self cancelDelayedHide];
     NSLog(@"hide");
@@ -144,7 +218,10 @@
     }
 }
 
-
++ (instancetype)viewFromNib
+{
+    return [[[NSBundle mainBundle] loadNibNamed:[[self class] description] owner:self options:nil] objectAtIndex:0];
+}
 
 
 

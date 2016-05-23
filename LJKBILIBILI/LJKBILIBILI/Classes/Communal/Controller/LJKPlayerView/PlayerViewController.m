@@ -100,6 +100,8 @@ CGRect smallFrame;
     // 设置控制台
     if (!_playerControl) {
         self.playerControl = [[PlayerViewControl alloc] initWithFrame:self.frame];
+//        self.playerControl = [PlayerViewControl viewFromNib];
+
     }
     self.playerControl.delegatePlayer = _player;     // 控制的播放器
     [_player.view addSubview:self.playerControl];   // 把控制台添加到_player.view上面

@@ -110,6 +110,7 @@
 		EB7744521CEC88D2007D83E9 /* PlayerViewControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77444A1CEC88D2007D83E9 /* PlayerViewControl.m */; };
 		EB7744531CEC88D2007D83E9 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77444C1CEC88D2007D83E9 /* PlayerViewController.m */; };
 		EB7744541CEC88D2007D83E9 /* PlayerViewRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77444E1CEC88D2007D83E9 /* PlayerViewRotate.m */; };
+		EB7744571CF1D1C7007D83E9 /* PlayerViewControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7744561CF1D1C7007D83E9 /* PlayerViewControl.xib */; };
 		EBD7C2FB1CD70C7A006F2016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7C2F91CD70C7A006F2016 /* Main.storyboard */; };
 		EBD7C3001CD70C7A006F2016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD7C2FE1CD70C7A006F2016 /* LaunchScreen.storyboard */; };
 		EBD7C30B1CD70C7A006F2016 /* LJKBILIBILITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7C30A1CD70C7A006F2016 /* LJKBILIBILITests.m */; };
@@ -313,6 +314,7 @@
 		EB77444C1CEC88D2007D83E9 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		EB77444D1CEC88D2007D83E9 /* PlayerViewRotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewRotate.h; sourceTree = "<group>"; };
 		EB77444E1CEC88D2007D83E9 /* PlayerViewRotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewRotate.m; sourceTree = "<group>"; };
+		EB7744561CF1D1C7007D83E9 /* PlayerViewControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerViewControl.xib; sourceTree = "<group>"; };
 		EBD7C2ED1CD70C7A006F2016 /* LJKBILIBILI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJKBILIBILI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD7C2FA1CD70C7A006F2016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBD7C2FF1CD70C7A006F2016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -808,6 +810,7 @@
 				EB7744481CEC88D2007D83E9 /* PlayerView+Notification.m */,
 				EB7744491CEC88D2007D83E9 /* PlayerViewControl.h */,
 				EB77444A1CEC88D2007D83E9 /* PlayerViewControl.m */,
+				EB7744561CF1D1C7007D83E9 /* PlayerViewControl.xib */,
 				EB77444B1CEC88D2007D83E9 /* PlayerViewController.h */,
 				EB77444C1CEC88D2007D83E9 /* PlayerViewController.m */,
 				EB77444D1CEC88D2007D83E9 /* PlayerViewRotate.h */,
@@ -979,6 +982,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB7744571CF1D1C7007D83E9 /* PlayerViewControl.xib in Resources */,
 				EB7743201CE5DC4B007D83E9 /* BLCellItem.xib in Resources */,
 				EB7743261CE5DC4B007D83E9 /* BLTopicCell.xib in Resources */,
 				EB77431E1CE5DC4B007D83E9 /* BLADCell.xib in Resources */,

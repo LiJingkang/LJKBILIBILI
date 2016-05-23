@@ -267,7 +267,7 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"%ld",indexPath.row);
+//    NSLog(@"%ld",indexPath.re);
 }
 
 
