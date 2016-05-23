@@ -6,6 +6,11 @@
 
 # UPDATE
 
+2016-05-23
+
+    重写 LJKPlayer 
+    新开 demo 完善LJKPlayer
+
 2016-05-18
 
     完成 基于ijkplayer的播放器
